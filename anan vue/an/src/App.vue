@@ -6,60 +6,64 @@
       <button type="button" name="button" class="btn"  @click="toggleView">
         <i class="icon iconfont"  :class="{'icon-liebiao2':currentView == 'view-main','icon-close':currentView != 'view-main'}"></i>
       </button>
-    </div>
-    
-    <div class="view-down" :class="{ active: currentView == 'view-down' }">
-      <components v-bind:is="viewDownComponent"  @login="switchView( 'view-up','login')"  @register="switchView('view-up','register')"  @linkTo="linkToOn"></components>
-    </div>
 
-    <div class="view-up" :class="{ active: currentView == 'view-up' }">
-      <component v-bind:is="viewUpComponent"></component>
+      <div class="layer" :class="showLayer">
+        <header>
+          <p class="logo">
+            王安安的想法
+          </p>
+        </header>
+        <main>
+          <ul class="list">
+            <li v-for="(nav,index) in navs" :key="nav.title">
+              <router-link :to="nav.router" @click="linkTo" >
+                <i class="icon iconfont"  :class="nav.icon"></i>
+                <span>{{ nav.title }}</span>
+              </router-link>
+            </li>
+          </ul>
+        </main>
+        <footer>
+        </footer>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import layer from '@/components/Layer'
-import login from '@/pages/login'
-import register from '@/pages/Register';
+import {navs} from '@/data'
 
 export default {
   name: 'app',
   data(){
     return{
       currentView: 'view-main',
-      viewDownComponent: 'layer',
-      viewUpComponent: 'login',
       showBlank:'',
+      navs:navs,
+      showLayer:''
     }
   },
   methods: {
     toggleView: function() {
        if (this.currentView == 'view-main') {
-         this.currentView = 'view-down'
-         this.viewDownComponent = 'layer'
+         this.currentView = '';
          this.showBlank = 'active';
+         this.showLayer = 'active';
        } else {
-         this.currentView = 'view-main';
          this.showBlank = '';
+         this.showLayer = '';
+         this.currentView = 'view-main';
        }
-     },
-     switchView: function(view, component) {
-       this.currentView = view;
-       this.viewUpComponent = component;
      },
      closeBlank:function (){
        this.showBlank = '';
-       this.currentView = 'view-main'
      },
-     linkToOn:function(){
-       this.currentView = 'view-main';
+     linkTo:function (){
+       this.showLayer = '';
+       this.showBlank = '';
      }
    },
   components: {
-    layer,
-    login,
-    register,
   }
 
 }
@@ -164,6 +168,84 @@ export default {
         transform: translate3d(0, 0, 0);
       }
     }
+
+    .layer{
+      height:100%;
+      width:100%;
+      position: fixed;
+      top:0;
+      left:0;
+      background: #fff;
+      transform: translate3d(-100%, 0, 0);
+      transition: .6s;
+      &.active{
+        transform: translate3d(0, 0, 0);
+      }
+      header{
+        height: 70px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        padding: 23px 15px;
+        p{
+          margin: 0;
+          font-size: 23px;
+          font-weight: bold;
+        }
+      }
+      main{
+        .list{
+          padding: 0;
+          li{
+            list-style: none;
+            width:100%;
+            height:50px;
+            line-height: 50px;
+            padding: 0 15px 0 15px;
+            box-sizing: border-box;
+            a{
+              width:100%;
+              height:100%;
+              display: inline-block;
+              color: #757575;
+              i{
+                color:#757575;
+                font-size:25px;
+                line-height: 48px;
+              }
+              span{
+                padding-left: 20px;
+                font-weight: 500;
+                line-height: 45px;
+                font-size: 17px;
+                color:#414141;
+              }
+            }
+          }
+        }
+      }
+      footer{
+        .login{
+          width:100%;
+          position: absolute;
+          bottom: 0;
+          button{
+            height:45px;
+            width:50%;
+            border: 0;
+            padding: 0;
+            float: left;
+            background: #EF6C00;
+            color:#fff;
+            font-size: 17px;
+          }
+          .on{
+            background: #6A1B9A;
+          }
+        }
+      }
+    }
+
   }
 
   @media screen and (min-width:970px){
@@ -238,6 +320,77 @@ export default {
     }
     .blank.active{
       display: block;
+    }
+
+    .layer{
+      height:100%;
+      width:100%;
+      &.active{
+
+      }
+      header{
+        height: 70px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        padding: 23px 15px;
+        p{
+          margin: 0;
+          font-size: 23px;
+          font-weight: bold;
+        }
+      }
+      main{
+        .list{
+          padding: 0;
+          li{
+            list-style: none;
+            width:100%;
+            height:50px;
+            line-height: 50px;
+            padding: 0 15px 0 15px;
+            box-sizing: border-box;
+            a{
+              width:100%;
+              height:100%;
+              display: inline-block;
+              color: #757575;
+              i{
+                color:#757575;
+                font-size:25px;
+                line-height: 48px;
+              }
+              span{
+                padding-left: 20px;
+                font-weight: 500;
+                line-height: 45px;
+                font-size: 17px;
+                color:#414141;
+              }
+            }
+          }
+        }
+      }
+      footer{
+        .login{
+          width:100%;
+          position: absolute;
+          bottom: 0;
+          button{
+            height:45px;
+            width:50%;
+            border: 0;
+            padding: 0;
+            float: left;
+            background: #EF6C00;
+            color:#fff;
+            font-size: 17px;
+          }
+          .on{
+            background: #6A1B9A;
+          }
+        }
+      }
     }
 
   }

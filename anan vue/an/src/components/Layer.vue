@@ -9,7 +9,7 @@
     <main>
       <ul class="list">
         <li v-for="(nav,index) in navs" :key="nav.title">
-          <router-link :to="nav.router"  @click="$emit('linkTo')" >
+          <router-link :to="nav.router" >
             <i class="icon iconfont"  :class="nav.icon"></i>
             <span>{{ nav.title }}</span>
           </router-link>
@@ -17,10 +17,6 @@
       </ul>
     </main>
     <footer>
-      <div class="login">
-        <button type="button" name="button" @click="$emit('login')" >登录</button>
-        <button type="button" name="button" class="on" @click="$emit('register')" >注册</button>
-      </div>
     </footer>
   </div>
 </template>
