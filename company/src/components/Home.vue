@@ -2,16 +2,16 @@
   <div class="home">
     <el-carousel indicator-position="outside"  height="500px">
       <el-carousel-item v-for="item in 5" :key="item" interval="2000">
-        <p class="animated  fadeInLeft delay_0">财资易通</p>
-        <h1 class="animated  fadeInLeft delay_100">亚洲首家服务于全球的“交易银行”金融云</h1>
-        <h2  class="animated  fadeInLeft delay_200">具备有效解决企业级全球资金账户管理能力，对企业级账户实现“可观可控”，提供通过企业级全球现金管理和“跨行跨境支付与清算”的技术和方法，实现企业级大数据的有效归集、展现和应用。</h2>
+        <p class="animated  fadeInLeft delay_0">孙瑶瑶&王安安</p>
+        <h1 class="animated  fadeInLeft delay_100">王安安孙瑶瑶的好友专享平台</h1>
+        <h2  class="animated  fadeInLeft delay_200">安安与瑶瑶的共享平台是一个对外开放的图片分享平台 也会有很多在京学习的趣事和经历</h2>
       </el-carousel-item>
     </el-carousel>
     <div class="business-1">
       <div class="box animated  fadeInLeft delay_200">
-        <h2  class="animated  fadeInLeft delay_300">业务覆盖全面的资金管理产品</h2>
+        <h2  class="animated  fadeInLeft delay_300">旅行的意义</h2>
         <!-- <div class="left-hr"></div> -->
-        <p  class="animated  fadeInLeft delay_400">财资TMS资金管理产品针对不同规模的资金管理需求，封装了相应功能体量的产品包。对于同一机构不同阶段的业务需求，用户可在TMS产品中进行灵活配置。</p>
+        <p  class="animated  fadeInLeft delay_400">这里会有我们和安安哥哥在每个城市开心的时光</p>
         <router-link to="/Solution"  class="animated  fadeInLeft delay_500">了解详情</router-link>
       </div>
     </div>

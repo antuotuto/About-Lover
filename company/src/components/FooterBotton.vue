@@ -4,8 +4,8 @@
       <p class="compang-synopsis">公司简介</p>
     </header> -->
     <footer>
-      <p>联系电话：010-50955681</p>
-      <p>版权所有 © 财资易通 SINCE 2017</p>
+      <p>联系电话：185-7300-3588</p>
+      <p>版权所有 © 王安安 SINCE 2017</p>
     </footer>
   </div>
 </template>

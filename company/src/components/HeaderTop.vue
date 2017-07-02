@@ -3,8 +3,17 @@
     <header>
       <div class="header-left">
         <div class="logo-img">
-          <img src="http://ooi407n8x.bkt.clouddn.com/yao/oneyao.png" alt="">
-          <p>孙琼瑶</p>
+          <span class="logo">
+            <span class="logo-img">
+              <span class="colorA"></span>
+              <span class="colorB"></span>
+              <span class="colorC"></span>
+              <span class="colorD"></span>
+              <span class="colorE"></span>
+            </span>
+            <p>An Yao</p>
+          </span>
+          <p>安 & 瑶</p>
         </div>
         <i class="icon iconfont " @click="toggleView" :class="{'icon-menu':currentView == 'view-main','icon-31guanbi':currentView != 'view-main'}"></i>
       </div>
@@ -90,18 +99,79 @@ export default {
         position: absolute;
         z-index: 900;
         background: #fff;
-        img{
-          height:30px;
-          width:30px;
-          padding: 5px;
-          border-radius: 50%;
-          overflow: hidden;
+        .logo{
+          height:40px;
+          width:40px;
+          display: inline-block;
+          background: #172540;
+          border-radius: 3px;
+          .logo-img{
+            width:100px;
+            position: relative;
+          }
+          .colorA{
+            height:20px;
+            width:3px;
+            background: #fff;
+            border-radius: 5px;
+            position: absolute;
+            left:-14px;
+            top:1px;
+          }
+          .colorB{
+            height:20px;
+            width:3px;
+            background: #CD972B;
+            border-radius: 5px;
+            position: absolute;
+            left:-7px;
+            top:1px;
+          }
+          .colorC{
+            height:12px;
+            width:3px;
+            background: #546C8E;
+            border-radius: 5px;
+            position: absolute;
+            left:-1px;
+            top:1px;
+          }
+          .colorD{
+            height:12px;
+            width:3px;
+            background: #F3D25F;
+            border-radius: 5px;
+            position: absolute;
+            left:5px;
+            top:1px;
+          }
+          .colorE{
+            height:20px;
+            width:3px;
+            background: #D5952B;
+            border-radius: 5px;
+            position: absolute;
+            left:11px;
+            top:1px;
+          }
+          p{
+            position: absolute;
+            top:8px;
+            left:-5px;
+            color:#fff;
+            transform: scale(.4);
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 12px;
+          }
         }
         p{
           display: inline-block;
-          line-height: 42px;
+          line-height: 47px;
           font-size: 15px;
           font-weight: bold;
+          float: right;
+          padding-right: 10px;
         }
       }
       .logo-img{
@@ -221,14 +291,14 @@ export default {
         position: absolute;
         z-index: 900;
         background: #fff;
-        img{
+        .logo{
           height:30px;
           width:30px;
           padding: 5px;
           border-radius: 50%;
           overflow: hidden;
         }
-        p{
+        span{
           display: inline-block;
           line-height: 42px;
           font-size: 15px;
