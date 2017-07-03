@@ -12,6 +12,8 @@ import ProductB from '@/components/ProductB'
 import ProductC from '@/components/ProductC'
 import Invite from '@/components/Invite'
 import homeTop from '@/components/homeTop'
+import codeIndex from '@/components/codeStandards/codeIndex'
+import designCode from '@/components/codeStandards/designCode'
 
 Vue.use(Router)
 
@@ -71,6 +73,16 @@ export default new Router({
       path: '/Invite',
       name: 'Invite',
       component: Invite
+    },
+    {
+      path: '/codeIndex',
+      name: 'codeIndex',
+      component: codeIndex
+    },
+    {
+      path: '/designCode',
+      name: 'designCode',
+      component: designCode
     }
   ]
 })

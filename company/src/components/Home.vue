@@ -280,7 +280,6 @@ export default {
     .business-3{
       padding: 50px;
       color:#fff;
-      background: #eee;
       .box{
         width: 300px;
         height: 100px;

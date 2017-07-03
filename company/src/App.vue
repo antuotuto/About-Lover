@@ -37,12 +37,6 @@ export default {
   height:100%;
   width:100%;
   .content-link{
-    height:100%;
-    width:100%;
-    position: absolute;
-    top:0;
-    left:0;
-    padding-top: 50px;
     box-sizing: border-box;
   }
 }

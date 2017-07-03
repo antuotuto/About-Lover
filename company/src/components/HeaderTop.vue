@@ -292,17 +292,78 @@ export default {
         z-index: 900;
         background: #fff;
         .logo{
-          height:30px;
-          width:30px;
-          padding: 5px;
-          border-radius: 50%;
-          overflow: hidden;
-        }
-        span{
+          height:40px;
+          width:40px;
           display: inline-block;
-          line-height: 42px;
+          background: #172540;
+          border-radius: 3px;
+          .logo-img{
+            width:100px;
+            position: relative;
+          }
+          .colorA{
+            height:20px;
+            width:3px;
+            background: #fff;
+            border-radius: 5px;
+            position: absolute;
+            left:-14px;
+            top:1px;
+          }
+          .colorB{
+            height:20px;
+            width:3px;
+            background: #CD972B;
+            border-radius: 5px;
+            position: absolute;
+            left:-7px;
+            top:1px;
+          }
+          .colorC{
+            height:12px;
+            width:3px;
+            background: #546C8E;
+            border-radius: 5px;
+            position: absolute;
+            left:-1px;
+            top:1px;
+          }
+          .colorD{
+            height:12px;
+            width:3px;
+            background: #F3D25F;
+            border-radius: 5px;
+            position: absolute;
+            left:5px;
+            top:1px;
+          }
+          .colorE{
+            height:20px;
+            width:3px;
+            background: #D5952B;
+            border-radius: 5px;
+            position: absolute;
+            left:11px;
+            top:1px;
+          }
+          p{
+            position: absolute;
+            top:8px;
+            left:-5px;
+            color:#fff;
+            transform: scale(.4);
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 12px;
+          }
+        }
+        p{
+          display: inline-block;
+          line-height: 47px;
           font-size: 15px;
           font-weight: bold;
+          float: right;
+          padding-right: 10px;
         }
       }
       .logo-img{

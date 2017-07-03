@@ -54,7 +54,7 @@ export default {
       .new-box{
         padding: 20px 20px 10px 20px;
         .content-img{
-
+          
         }
         .center-text{
           h2{

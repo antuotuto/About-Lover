@@ -28,6 +28,16 @@ export const listStays = [
     title:'联系我们',
     icon:'icon-service_light',
     router: '/contactUs'
+  },
+  {
+    title:'logo设计',
+    icon:'icon-service_light',
+    router: '/codeIndex'
+  },
+  {
+    title:'设计规范',
+    icon:'icon-service_light',
+    router: '/designCode'
   }
 
 

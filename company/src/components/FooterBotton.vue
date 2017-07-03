@@ -4,8 +4,7 @@
       <p class="compang-synopsis">公司简介</p>
     </header> -->
     <footer>
-      <p>联系电话：185-7300-3588</p>
-      <p>版权所有 © 王安安 SINCE 2017</p>
+      <p>不为设计而设计 而为美而付出一切</p>
     </footer>
   </div>
 </template>
@@ -23,9 +22,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@media screen and (max-width:900px){
   .footerBotton{
     background: #293646;
     color:#eee;
+    width:100%;
     header{
       background: #eee;
       color:#293646;
@@ -37,13 +38,52 @@ export default {
       padding: 50px;
     }
     footer{
-      padding: 50px 50px 50px 50px;
-      text-align: center;
+      height:150px;
+      width:100%;
+      background: #293646;
       p{
-        font-size: 13px;
-        padding: 1px;
+        text-align: center;
+        line-height: 150px;
+        color:#fff;
+        font-weight: 100;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin: 0;
       }
     }
   }
+}
+
+@media screen and (min-width:900px){
+  .footerBotton{
+    background: #293646;
+    color:#eee;
+    width:100%;
+    header{
+      background: #eee;
+      color:#293646;
+      .compang-synopsis{
+        font-size: 20px;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+      padding: 50px;
+    }
+    footer{
+      height:300px;
+      width:100%;
+      background: #eee;
+      p{
+        text-align: center;
+        line-height: 300px;
+        color:#172540;
+        font-weight: 100;
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin: 0;
+      }
+    }
+  }
+}
 
 </style>
