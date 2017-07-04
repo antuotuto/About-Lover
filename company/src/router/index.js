@@ -12,6 +12,8 @@ import ProductB from '@/components/ProductB'
 import ProductC from '@/components/ProductC'
 import Invite from '@/components/Invite'
 import homeTop from '@/components/homeTop'
+import Buy from '@/components/Buy'
+import NavList from '@/components/NavList'
 import codeIndex from '@/components/codeStandards/codeIndex'
 import designCode from '@/components/codeStandards/designCode'
 
@@ -83,6 +85,16 @@ export default new Router({
       path: '/designCode',
       name: 'designCode',
       component: designCode
+    },
+    {
+      path: '/Buy',
+      name: 'Buy',
+      component: Buy
+    },
+    {
+      path: '/NavList',
+      name: 'NavList',
+      component: NavList
     }
   ]
 })

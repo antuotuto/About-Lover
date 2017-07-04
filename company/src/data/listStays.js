@@ -1,36 +1,36 @@
 export const listStays = [
   {
-    title:'主 页',
+    title:'安安的家',
     icon:'icon-home1',
     router: '/Home'
   },
   {
-    title:'关于我们',
+    title:'关于安安',
     icon:'icon-friend_light',
     router: '/AboutUs'
   },
   {
-    title:'新闻动态',
+    title:'安安动态',
     icon:'icon-new1',
     router: '/New'
   },
   {
-    title:'解决方案',
+    title:'安安方案',
     icon:'icon-creative',
     router: '/Solution'
   },
   {
-    title:'招贤纳士',
+    title:'加入安安',
     icon:'icon-friendadd',
     router: '/Invite'
   },
   {
-    title:'联系我们',
+    title:'联系安安',
     icon:'icon-service_light',
     router: '/contactUs'
   },
   {
-    title:'logo设计',
+    title:'logo安安',
     icon:'icon-service_light',
     router: '/codeIndex'
   },
@@ -38,7 +38,11 @@ export const listStays = [
     title:'设计规范',
     icon:'icon-service_light',
     router: '/designCode'
+  },
+  {
+    title:'网站服务',
+    icon:'icon-service_light',
+    router: '/Buy'
   }
-
 
 ];

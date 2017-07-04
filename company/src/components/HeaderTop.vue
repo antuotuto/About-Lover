@@ -2,19 +2,21 @@
   <div class="header">
     <header>
       <div class="header-left">
-        <div class="logo-img">
-          <span class="logo">
-            <span class="logo-img">
-              <span class="colorA"></span>
-              <span class="colorB"></span>
-              <span class="colorC"></span>
-              <span class="colorD"></span>
-              <span class="colorE"></span>
+        <router-link to="/">
+          <div class="logo-img">
+            <span class="logo">
+              <span class="logo-img">
+                <span class="colorA"></span>
+                <span class="colorB"></span>
+                <span class="colorC"></span>
+                <span class="colorD"></span>
+                <span class="colorE"></span>
+              </span>
+              <p>An Yao</p>
             </span>
-            <p>An Yao</p>
-          </span>
-          <p>安 & 瑶</p>
+            <p>安 & 瑶</p>
         </div>
+      </router-link>
         <i class="icon iconfont " @click="toggleView" :class="{'icon-menu':currentView == 'view-main','icon-31guanbi':currentView != 'view-main'}"></i>
       </div>
       <div class="header-right" :class="listStayActive">

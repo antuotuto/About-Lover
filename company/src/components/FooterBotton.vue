@@ -4,7 +4,7 @@
       <p class="compang-synopsis">公司简介</p>
     </header> -->
     <footer>
-      <p>不为设计而设计 而为美而付出一切</p>
+      <p>不为设计而设计 为美而付出一切</p>
     </footer>
   </div>
 </template>
@@ -40,12 +40,12 @@ export default {
     footer{
       height:150px;
       width:100%;
-      background: #293646;
+      background: #F3F5F7;
       p{
         text-align: center;
         line-height: 150px;
-        color:#fff;
-        font-weight: 100;
+        color:#000;
+        font-weight: 200;
         font-size: 18px;
         letter-spacing: 2px;
         margin: 0;
@@ -72,15 +72,16 @@ export default {
     footer{
       height:300px;
       width:100%;
-      background: #eee;
+      background: #F3F5F7;
       p{
         text-align: center;
         line-height: 300px;
-        color:#172540;
+        color:#000;
         font-weight: 100;
         font-size: 40px;
         letter-spacing: 2px;
         margin: 0;
+        letter-spacing: 8px;
       }
     }
   }
