@@ -12,7 +12,7 @@
                 <span class="colorD"></span>
                 <span class="colorE"></span>
               </span>
-              <p>An Yao</p>
+              <!-- <p>An Yao</p> -->
             </span>
             <p>安 & 瑶</p>
         </div>
@@ -258,8 +258,6 @@ export default {
 
 @media screen and (min-width:900px){
   .header{
-    height:50px;
-    width:100%;
     .blank {
       display: none;
       height: 100%;
@@ -275,27 +273,27 @@ export default {
       }
     }
     header{
-      width:100%;
-      height:50px;
       position: relative;
       box-sizing: border-box;
-      position: fixed;
-      top:0;
-      left:0;
       z-index: 1000;
       img{
         height:100%;
         width:100%;
       }
       .header-left{
-        height:50px;
-        width:100%;
-        position: absolute;
+        height:100%;
+        width:50px;
+        position: fixed;
+        top:0;
+        left: 0;
         z-index: 900;
         background: #fff;
         .logo{
           height:40px;
           width:40px;
+          position: fixed;
+          left:5px;
+          bottom:5px;
           display: inline-block;
           background: #172540;
           border-radius: 3px;
@@ -361,11 +359,17 @@ export default {
         }
         p{
           display: inline-block;
-          line-height: 47px;
+          line-height: 30px;
+          text-align: center;
           font-size: 15px;
           font-weight: bold;
-          float: right;
-          padding-right: 10px;
+          width: 10px;
+          position: fixed;
+          bottom: 50px;
+          left:17px;
+        }
+        .moble{
+          top:20%;
         }
       }
       .logo-img{
@@ -378,7 +382,7 @@ export default {
       .header-left i{
         position: fixed;
         top:5px;
-        right:5px;
+        left:5px;
         z-index: 900;
         color: #000;
         height:40px;
@@ -392,14 +396,15 @@ export default {
         height:100%;
         width:300px;
         z-index: 800;
-        padding: 20px;
-        padding-top: 50px;
+        padding: 50px;
+        padding-left: 60px;
+        padding-right: 10px;
+        background: #fff;
         box-sizing: border-box;
-        background:  #293646;
         position: fixed;
         left:0;
         top:0;
-        transform: translate(-100%, 0);
+        transform: translate(-300px, 0);
         transition: .4s;
         .router-link-active{
           background: #eee;
@@ -407,6 +412,7 @@ export default {
           font-weight: bold;
         }
         &.active{
+          background: linear-gradient(270deg,rgba(255,115,155,.7),#ff739b);
           transform: translate(0, 0);
         }
         ul {
@@ -432,7 +438,10 @@ export default {
                 width: 100%;
                 display: inline-block;
                 position: relative;
-                text-align: center;
+                text-align: right;
+                p{
+                  padding-right: 50px;
+                }
               i {
                 height: 50px;
                 width: 50px;

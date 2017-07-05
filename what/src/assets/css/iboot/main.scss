@@ -1,0 +1,21 @@
+@import "main/common";
+
+
+//
+.title-primary {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: black;
+    line-height: 30px;
+    text-align: left;
+    &::before{
+      position: relative;
+      top: -2px;
+      vertical-align: middle;
+      display: inline-block;
+      content: '';
+      height: 16px;
+      margin-right: 10px;
+      border-left: 4px solid red;
+    }
+}

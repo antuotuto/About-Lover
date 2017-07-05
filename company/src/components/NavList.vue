@@ -15,111 +15,10 @@
     </div>
 
     <main>
-      <div class="qian">
-        <h1>前端框架</h1>
-        <div class="classify-box">
-          <div class="classify" v-for="(nav,index) in navs" :key="nav.title" >
-            <a :href="nav.router" target="_blank">
-              <div class="">
-
-              </div>
-              <h4>{{nav.title}}</h4>
-              <p>{{nav.text}}</p>
-              <p class="example">{{nav.me}}</p>
-              <p class="love">推荐指数: {{nav.size}}</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="qian color">
-        <h1>颜色</h1>
-        <div class="classify-box">
-          <div class="classify" v-for="(nav,index) in navs" :key="nav.title" >
-            <a :href="nav.router" target="_blank">
-              <div class="">
-                <!-- <img src="" alt=""> -->
-              </div>
-              <h4>{{nav.title}}</h4>
-              <p>Vue.js是目前较为流行的前端框架</p>
-              <p class="example">我使用最多的前端工具，这个工具真的能帮到你</p>
-              <p class="love">推荐指数: 1</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="qian advertisement">
-        <h1>广告网站</h1>
-        <div class="classify-box">
-          <div class="classify" v-for="(nav,index) in navs" :key="nav.title" >
-            <a :href="nav.router" target="_blank">
-              <div class="">
-                <!-- <img src="" alt=""> -->
-              </div>
-              <h4>{{nav.title}}</h4>
-              <p>Vue.js是目前较为流行的前端框架</p>
-              <p class="example">我使用最多的前端工具，这个工具真的能帮到你</p>
-              <p class="love">推荐指数: 1</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="qian design">
-        <h1>设计网站</h1>
-        <div class="classify-box">
-          <div class="classify" v-for="(nav,index) in navs" :key="nav.title" >
-            <a :href="nav.router" target="_blank">
-              <div class="">
-                <!-- <img src="" alt=""> -->
-              </div>
-              <h4>{{nav.title}}</h4>
-              <p>Vue.js是目前较为流行的前端框架</p>
-              <p class="example">我使用最多的前端工具，这个工具真的能帮到你</p>
-              <p class="love">推荐指数: 1</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="qian learn">
-        <h1>设计网站</h1>
-        <div class="classify-box">
-          <div class="classify" v-for="(nav,index) in navs" :key="nav.title" >
-            <a :href="nav.router" target="_blank">
-              <div class="">
-                <!-- <img src="" alt=""> -->
-              </div>
-              <h4>{{nav.title}}</h4>
-              <p>Vue.js是目前较为流行的前端框架</p>
-              <p class="example">我使用最多的前端工具，这个工具真的能帮到你</p>
-              <p class="love">推荐指数: 1</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="qian electronics">
-        <h1>设计网站</h1>
-        <div class="classify-box">
-          <div class="classify" v-for="(nav,index) in navs" :key="nav.title" >
-            <a :href="nav.router" target="_blank">
-              <div class="">
-                <!-- <img src="" alt=""> -->
-              </div>
-              <h4>{{nav.title}}</h4>
-              <p>Vue.js是目前较为流行的前端框架</p>
-              <p class="example">我使用最多的前端工具，这个工具真的能帮到你</p>
-              <p class="love">推荐指数: 1</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
+      <h1>前端框架</h1>
+      <listShow></listShow>
+      <h1>前端框架</h1>
+      <listShow></listShow>
 
     </main>
 
@@ -130,6 +29,8 @@
 <script>
 import {navs} from '@/data'
 import {listStays} from '@/data'
+import listShow from '@/components/ListShow'
+
 
 export default {
   name: 'Nav',
@@ -138,6 +39,9 @@ export default {
       navs:navs,
       listStays:listStays
     }
+  },
+  components: {
+      listShow
   }
 }
 </script>

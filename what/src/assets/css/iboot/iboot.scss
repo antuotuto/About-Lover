@@ -1,0 +1,36 @@
+@import "./iboot/variables";
+@import "./iboot/mixins"; //
+@import "./iboot/normalize"; //
+@import "./iboot/reboot"; //
+@import "./iboot/flex"; //
+@import "./iboot/form";
+@import "./iboot/button";
+@import "./iboot/table"; //
+@import "./iboot/iconimg";
+@import "./iboot/components";
+@import "./iboot/utilities";
+
+//
+/*base*/
+body,
+html {
+  height: 100% !important;
+}
+//
+
+.page {
+  position: relative;
+  min-height: 100%;
+  margin: 0 auto;
+}
+//
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  max-width: 1080px;
+  @include clearfix();
+}

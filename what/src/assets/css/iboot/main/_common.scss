@@ -1,0 +1,32 @@
+@import "../iboot.scss";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $brand-primary;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-link {
+  padding: 0 15px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+//
+.alert-info {
+  text-align: center;
+  background-color: $brand-info;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+}

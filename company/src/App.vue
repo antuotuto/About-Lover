@@ -10,7 +10,7 @@
       <transition name="router-fade" mode="out-in">
         <router-view v-if="!$route.meta.keepAlive"></router-view>
       </transition>
-      <footerBotton></footerBotton>
+      <!-- <footerBotton></footerBotton> -->
     </div>
   </div>
 </template>
@@ -29,6 +29,16 @@ export default {
 </script>
 
 <style lang="scss">
+@media screen and (max-width:900px){
+
+}
+
+@media screen and (min-width:900px){
+  .content-link{
+    padding-left: 50px;
+  }
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -48,5 +58,7 @@ export default {
 .router-fade-leave-active {
     opacity: 0;
 }
+
+
 
 </style>

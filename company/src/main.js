@@ -11,6 +11,8 @@ Vue.config.productionTip = false
 
 import '@/assets/css/animate.css'
 import '@/assets/css/delay.css'
+import '@/assets/css/an.scss'
+
 
 Vue.use(ElementUI)
 
