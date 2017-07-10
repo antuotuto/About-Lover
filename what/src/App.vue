@@ -18,9 +18,9 @@ export default {
 
 <style lang="scss">
 #app{
-  background: #FFEAB6;
   height:100%;
   width:100%;
+  background: #111111;
 }
 
 

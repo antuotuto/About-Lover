@@ -4,12 +4,7 @@
     <span class="closeBtn" @click="closeBtn"></span>
     <div class="an list animated fadeInDown delay_0">
       <ul>
-        <li>an</li>
-      </ul>
-    </div>
-    <div class="yao list animated fadeInUp delay_0">
-      <ul>
-        <li>yao</li>
+        <li>王安安</li>
       </ul>
     </div>
 
@@ -38,46 +33,89 @@ export default {
 <style scoped lang="scss">
 @import "../assets/css/an/an.scss";
 
-.headerTop{
-  position: fixed;
-  top:0;
-  left:0;
-  height:100%;
-  width:100%;
-  background: $mostOne;
-  transform: translate(0, -100%);
-  transition: .4s;
-  padding: 100px;
-  font-weight: bold;
-  &.active{
-    transform: translate(0, 0);
+@media screen and (max-width:900px){
+  .headerTop{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: #3c3c3c;
+    transform: translate(0, -100%);
+    transition: .4s;
+    padding: 50px;
+    z-index: 1000;
+    &.active{
+      transform: translate(0, 0);
+    }
+  }
+  .downButton{
+    height:40px;
+    width:40px;
+    position: absolute;
+    bottom: -40px;
+    right:10px;
+    background: #3c3c3c;
+  }
+  .closeBtn{
+    height:40px;
+    width:40px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    background: #EA9215;
+  }
+  .list{
+    height:100%;
+    width:100%;
+    float: left;
+    text-align: center;
+    color:#eee;
+  }
+
+}
+
+
+@media screen and (min-width:900px){
+  .headerTop{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: #3c3c3c;
+    transform: translate(0, -100%);
+    transition: .4s;
+    padding: 50px;
+    z-index: 1000;
+    &.active{
+      transform: translate(0, 0);
+    }
+  }
+  .downButton{
+    height:50px;
+    width:50px;
+    position: absolute;
+    bottom: -50px;
+    right:10px;
+    background: #3c3c3c;
+  }
+  .closeBtn{
+    height:50px;
+    width:50px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    background: #EA9215;
+  }
+  .list{
+    height:100%;
+    width:50%;
+    float: left;
+    text-align: center;
   }
 }
-.downButton{
-  height:150px;
-  width:150px;
-  position: absolute;
-  bottom: -40px;
-  right:50px;
-  transform: rotate(45deg);
-  border-radius: 20px;
-  background: $mostOne;
-}
-.closeBtn{
-  height:50px;
-  width:50px;
-  position: absolute;
-  right:50px;
-  top:50px;
-  background: $mostTwo;
-  border-radius: 5px;
-}
-.list{
-  height:100%;
-  width:50%;
-  float: left;
-  text-align: center;
-}
+
 
 
 
