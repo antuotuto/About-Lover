@@ -12,9 +12,14 @@
       </div>
     </div>
     <div class="contont-box">
-      <h1 class="product-title">前端设计</h1>
+      <h1 class="product-title">前端技术</h1>
       <div class="product-box">
         <love v-bind:an="listStays"></love>
+      </div>
+
+      <h1 class="product-title">其他技术</h1>
+      <div class="product-box">
+        <love v-bind:an="listStays0"></love>
       </div>
 
       <h1 class="product-title">设计需求</h1>
@@ -22,9 +27,14 @@
         <love v-bind:an="listStays2"></love>
       </div>
 
-      <h1 class="product-title">代码需求</h1>
+      <h1 class="product-title">Apple</h1>
       <div class="product-box">
-        <love></love>
+        <love v-bind:an="listStays1"></love>
+      </div>
+
+      <h1 class="product-title">大神网站</h1>
+      <div class="product-box">
+        <love v-bind:an="listStays3"></love>
       </div>
     </div>
 
@@ -39,7 +49,10 @@
 <script>
 import love from '@/components/Love'
 import {listStays} from '@/data/listStays'
+import {listStays0} from '@/data/listStays0'
+import {listStays1} from '@/data/listStays1'
 import {listStays2} from '@/data/listStays2'
+import {listStays3} from '@/data/listStays3'
 
 
 export default {
@@ -47,7 +60,10 @@ export default {
   data () {
     return {
       listStays:listStays,
-      listStays2:listStays2
+      listStays0:listStays0,
+      listStays1:listStays1,
+      listStays2:listStays2,
+      listStays3:listStays3
     }
   },
   components:{

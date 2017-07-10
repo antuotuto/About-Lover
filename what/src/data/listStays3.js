@@ -1,8 +1,8 @@
-export const listStays = [
+export const listStays3 = [
   {
-    title:'Vue.js',
-    text:'Vue.js是一个构建数据驱动的 web 界面的渐进式框架, API 实现响应的数据绑定和组合的视图组件。',
-    router: 'https://cn.vuejs.org/'
+    title:'吕大神',
+    text:'高手1。',
+    router: 'http://phoeshow.github.io/2016/07/07/css%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%8F%8D%E8%BD%AC%E6%95%88%E6%9E%9C/'
   },
   {
     title:'Angular.js',
@@ -33,28 +33,7 @@ export const listStays = [
     title:'Element',
     text:'Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助你的网站快速成型。',
     router: 'http://element.eleme.io/#/zh-CN'
-  },
-  {
-    title:'七牛云',
-    text:'七牛云，中国企业级公有云服务商，致力于打造以数据为核心的场景化PaaS服务。围绕富媒体场景，七牛先后推出了对象存储，融合CDN加速，直播云。',
-    router: 'https://www.qiniu.com/?utm_campaign=baiduSEM&utm_source=baiduSEM&utm_medium=baiduSEM&utm_content=baiduSEM'
-  },
-  {
-    title:'Swiper',
-    text:'轮播。',
-    router: 'http://www.swiper.com.cn/'
-  },
-  {
-    title:'Tinypng',
-    text:'轮播。',
-    router: 'https://tinypng.com/'
-  },
-  {
-    title:'和风天气',
-    text:'天气api。',
-    router: 'https://www.heweather.com/'
-  },
-
+  }
 
 
 

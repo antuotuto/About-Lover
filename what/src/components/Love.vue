@@ -42,7 +42,7 @@ export default {
       font-weight: 300;
     }
     p{
-      color:#303841;
+      color: #99998f;
       padding: 10px;
       width: 100%;
     }
