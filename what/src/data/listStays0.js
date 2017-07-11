@@ -1,23 +1,33 @@
 export const listStays0 = [
   {
-    title:'Vue.js',
-    text:'Vue.js是一个构建数据驱动的 web 界面的渐进式框架, API 实现响应的数据绑定和组合的视图组件。',
-    router: 'https://cn.vuejs.org/'
+    title:'七牛云',
+    text:'七牛云，中国企业级公有云服务商，致力于打造以数据为核心的场景化PaaS服务。围绕富媒体场景，七牛先后推出了对象存储，融合CDN加速，直播云。',
+    router: 'https://www.qiniu.com/?utm_campaign=baiduSEM&utm_source=baiduSEM&utm_medium=baiduSEM&utm_content=baiduSEM'
   },
   {
-    title:'Angular.js',
+    title:'Tinypng',
+    text:'轮播。',
+    router: 'https://tinypng.com/'
+  },
+  {
+    title:'和风天气',
+    text:'天气api。',
+    router: 'https://www.heweather.com/'
+  },
+  {
+    title:'Hexo',
     text:'AngularJS诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。',
-    router: 'https://angular.cn/'
+    router: 'https://hexo.io/zh-cn/docs/configuration.html'
   },
   {
-    title:'React.js',
+    title:'掘金',
     text:'React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套。',
-    router: 'http://www.react-cn.com/'
+    router: 'https://juejin.im/'
   },
   {
-    title:'Yeoman',
+    title:'Zendesk',
     text:'Yeoman是Google的团队和外部贡献者团队合作开发的，他的目标是通过Grunt（一个用于开发任务自动化的命令行工具）。',
-    router: 'http://yeoman.io/'
+    router: 'https://www.zendesk.com/'
   },
   {
     title:'Bootstrap',
@@ -33,7 +43,8 @@ export const listStays0 = [
     title:'Element',
     text:'Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助你的网站快速成型。',
     router: 'http://element.eleme.io/#/zh-CN'
-  }
+  },
+
 
 
 

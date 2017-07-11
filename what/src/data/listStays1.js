@@ -26,8 +26,8 @@ export const listStays1 = [
   },
   {
     title:'AirPods',
-    text:'GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。',
-    router: 'Apple AirPods是一款无线耳机，于北京时间9月8日2016年苹果秋季新品发布会上同iPhone 7发布。'
+    text:'Apple AirPods是一款无线耳机，于北京时间9月8日2016年苹果秋季新品发布会上同iPhone 7发布。',
+    router: 'https://www.apple.com/airpods/'
   },
   {
     title:'ipad mini4',

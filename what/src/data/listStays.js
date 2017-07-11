@@ -35,9 +35,29 @@ export const listStays = [
     router: 'http://element.eleme.io/#/zh-CN'
   },
   {
-    title:'七牛云',
-    text:'七牛云，中国企业级公有云服务商，致力于打造以数据为核心的场景化PaaS服务。围绕富媒体场景，七牛先后推出了对象存储，融合CDN加速，直播云。',
-    router: 'https://www.qiniu.com/?utm_campaign=baiduSEM&utm_source=baiduSEM&utm_medium=baiduSEM&utm_content=baiduSEM'
+    title:'Swiper',
+    text:'轮播。',
+    router: 'http://www.swiper.com.cn/'
+  },
+  {
+    title:'Koa',
+    text:'轮播。',
+    router: 'http://koa.bootcss.com/#'
+  },
+  {
+    title:'Nod.js',
+    text:'轮播。',
+    router: 'https://nodejs.org/en/'
+  },
+  {
+    title:'Express',
+    text:'轮播。',
+    router: 'http://www.expressjs.com.cn/'
+  },
+  {
+    title:'d3.js',
+    text:'Yeoman是Google的团队和外部贡献者团队合作开发的，他的目标是通过Grunt（一个用于开发任务自动化的命令行工具）。',
+    router: 'https://d3js.org/'
   },
   {
     title:'Swiper',
@@ -45,15 +65,11 @@ export const listStays = [
     router: 'http://www.swiper.com.cn/'
   },
   {
-    title:'Tinypng',
+    title:'Swiper',
     text:'轮播。',
-    router: 'https://tinypng.com/'
+    router: 'http://www.swiper.com.cn/'
   },
-  {
-    title:'和风天气',
-    text:'天气api。',
-    router: 'https://www.heweather.com/'
-  },
+
 
 
 

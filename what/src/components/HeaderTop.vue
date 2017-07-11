@@ -1,13 +1,16 @@
 <template>
   <div class="headerTop" :class="downBtn">
-    <div class="downButton" @click="listDown"></div>
-    <span class="closeBtn" @click="closeBtn"></span>
+    <div class="downButton" @click="listDown">
+      <i class="icon iconfont icon-sortlight"></i>
+    </div>
+    <span class="closeBtn" @click="closeBtn">
+      <i class="icon iconfont icon-close"></i>
+    </span>
     <div class="an list animated fadeInDown delay_0">
       <ul>
         <li>王安安</li>
       </ul>
     </div>
-
   </div>
 </template>
 
@@ -56,6 +59,14 @@ export default {
     bottom: -40px;
     right:10px;
     background: #3c3c3c;
+    i{
+      text-align: center;
+      width:40px;
+      line-height: 40px;
+      display: inline-block;
+      color:#fff;
+      font-size: 20px;
+    }
   }
   .closeBtn{
     height:40px;
@@ -64,6 +75,13 @@ export default {
     right:10px;
     top:10px;
     background: #EA9215;
+    i{
+      text-align: center;
+      width:40px;
+      line-height: 40px;
+      display: inline-block;
+      font-size: 20px;
+    }
   }
   .list{
     height:100%;
@@ -99,6 +117,14 @@ export default {
     bottom: -50px;
     right:10px;
     background: #3c3c3c;
+    i{
+      text-align: center;
+      width:50px;
+      line-height: 50px;
+      display: inline-block;
+      color:#fff;
+      font-size: 25px;
+    }
   }
   .closeBtn{
     height:50px;
@@ -107,6 +133,13 @@ export default {
     right:10px;
     top:10px;
     background: #EA9215;
+    i{
+      text-align: center;
+      width:50px;
+      line-height: 50px;
+      display: inline-block;
+      font-size: 25px;
+    }
   }
   .list{
     height:100%;
