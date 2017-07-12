@@ -20,7 +20,7 @@ export default {
   },
   props:["an"],
   created (){
-    console.log(this.an)
+    // console.log(this.an)
   },
 }
 </script>

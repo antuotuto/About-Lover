@@ -9,8 +9,20 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
+      redirect: '/home'
+    },{
+      path: '/home',
+      component: Home,
+      children: [
+        {
+            path: '',
+            redirect: '1'
+        },
+        {
+            path: '1',
+            component: Hello
+        }
+      ]
     }
   ]
 })
