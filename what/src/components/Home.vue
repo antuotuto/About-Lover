@@ -170,18 +170,18 @@ a {
     .product-title {
         background: #293646;
         color: #fff;
-        margin: 5px 0;
+        margin: 10px 0;
         padding: 50px;
         text-align: center;
         font-weight: 200;
     }
 
     .contont-box {
-      padding: 0 5px;
+      padding: 0 10px;
         h2 {
             background: #293646;
             color: #fff;
-            margin: 5px 0;
+            margin: 10px 0;
             padding: 20px;
             text-align: center;
             font-weight: 200;
