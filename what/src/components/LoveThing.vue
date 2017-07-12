@@ -30,7 +30,6 @@ export default {
 @media screen and (max-width:900px){
   .header-top{
     overflow: hidden;
-    margin-bottom: 5px;
     width:49%;
     margin-right: 2%;
     display: inline-block;
@@ -55,7 +54,7 @@ export default {
     width: 19.2%;
     display: inline-block;
     margin-right: 1%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     h2{
       background: #293646;
       padding:10px ;
@@ -63,6 +62,7 @@ export default {
       font-size: 18px;
       text-align: center;
       font-weight: 300;
+      border-radius: 3px;
     }
   }
   .header-top:nth-child(5n){

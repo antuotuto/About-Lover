@@ -5,8 +5,8 @@
       <el-carousel height="400px">
         <el-carousel-item v-for="item in 4" :key="item">
           <p class="animated  fadeInLeft delay_0">孙瑶瑶&王安安</p>
-          <h1 class="animated  fadeInLeft delay_100">王安安的前端网址分享希望能帮到你</h1>
-          <h2 class="animated  fadeInLeft delay_200">我想我会把我的思维放进我的生活</h2>
+          <h1 class="animated  fadeInLeft delay_100">代码随心，思维不凡</h1>
+          <h2 class="animated  fadeInLeft delay_200">我想会有人问我的开始，我想现在就是我的开始</h2>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -17,9 +17,19 @@
       <love v-bind:an="listStays"></love>
     </div>
 
+    <h2>前端美站</h2>
+    <div class="product-box">
+      <loveThing v-bind:an="loves"></loveThing>
+    </div>
+
     <h1 class="product-title">其他技术</h1>
     <div class="product-box">
       <love v-bind:an="listStays0"></love>
+    </div>
+
+    <h2>技术美站</h2>
+    <div class="product-box">
+      <loveThing v-bind:an="loves0"></loveThing>
     </div>
 
     <h1 class="product-title">设计需求</h1>
@@ -27,14 +37,9 @@
       <love v-bind:an="listStays2"></love>
     </div>
 
-    <h1 class="product-title">大神网站</h1>
+    <h2>设计美站</h2>
     <div class="product-box">
-      <love v-bind:an="listStays3"></love>
-    </div>
-
-    <h1 class="product-title">学习网站</h1>
-    <div class="product-box">
-      <love v-bind:an="listStays7"></love>
+      <loveThing v-bind:an="loves1"></loveThing>
     </div>
 
     <h1 class="product-title">Apple</h1>
@@ -57,10 +62,12 @@
       <love v-bind:an="listStays6"></love>
     </div>
 
-    <h2>前端必看</h2>
+    <h2>学习美站</h2>
     <div class="product-box">
-      <loveThing v-bind:an="listStays7"></loveThing>
+      <loveThing v-bind:an="loves2"></loveThing>
     </div>
+
+
 
 
 
@@ -105,7 +112,18 @@ import {
 import {
   listStays7
 } from '@/data/listStays7'
-
+import {
+  loves
+} from '@/data/love'
+import {
+  loves0
+} from '@/data/love'
+import {
+  loves1
+} from '@/data/love'
+import {
+  loves2
+} from '@/data/love'
 
 export default {
   name: 'home',
@@ -119,7 +137,11 @@ export default {
       listStays4: listStays4,
       listStays5: listStays5,
       listStays6: listStays6,
-      listStays7: listStays7
+      listStays7: listStays7,
+      loves,loves,
+      loves0,loves0,
+      loves1,loves1,
+      loves2,loves2
     }
   },
   components: {
@@ -148,18 +170,18 @@ a {
     .product-title {
         background: #293646;
         color: #fff;
-        margin: 15px 0;
+        margin: 5px 0;
         padding: 50px;
         text-align: center;
         font-weight: 200;
     }
 
     .contont-box {
-      padding: 0 20px;
+      padding: 0 5px;
         h2 {
             background: #293646;
             color: #fff;
-            margin: 15px 0;
+            margin: 5px 0;
             padding: 20px;
             text-align: center;
             font-weight: 200;
@@ -239,8 +261,7 @@ a {
         background: #293646;
         color: #fff;
         margin: 20px 0;
-        padding: 60px;
-        text-align: center;
+        padding: 40px;
         font-weight: 200;
         border-radius: 3px;
     }
@@ -248,9 +269,9 @@ a {
         h2 {
             background: #293646;
             color: #fff;
-            margin: 20px 0;
-            padding: 15px;
-            text-align: center;
+            margin: 10px 0;
+            padding: 20px;
+            padding-left: 60px;
             font-weight: 200;
             border-radius: 3px;
         }

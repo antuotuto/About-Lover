@@ -32,7 +32,7 @@ export default {
   .header-top{
     background: rgba(0,0,0,0.1);
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     h2{
       background: #293646;
       padding:10px ;
