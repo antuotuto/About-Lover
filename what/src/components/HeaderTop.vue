@@ -164,9 +164,9 @@ a {
         a{
           color:#fff;
         }
-        li:first-child{
-          background: #02b2b5;
-        }
+        // li:first-child{
+        //   background: #02b2b5;
+        // }
         .router-link-active {
             background: #eee;
             color:#293646;
@@ -183,12 +183,12 @@ a {
             margin: 10px 0;
             width: 95%;
             text-align: center;
-            border-radius: 3px;
         }
         h2 {
             font-size: 14px;
             margin: 5px 0;
             padding: 5px;
+            color:#293646;
         }
     }
     .link-box {
@@ -264,9 +264,9 @@ a {
           height:70px;
           line-height: 70px;
         }
-        li:first-child{
-          background: #02b2b5;
-        }
+        // li:first-child{
+        //   background: #02b2b5;
+        // }
         a{
           color:#fff;
         }
@@ -284,7 +284,6 @@ a {
             padding: 30px;
             margin: 10px 0;
             text-align: center;
-            border-radius: 3px;
         }
         h2 {
             font-size: 14px;

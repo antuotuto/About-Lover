@@ -62,7 +62,11 @@ export default {
       font-size: 18px;
       text-align: center;
       font-weight: 300;
-      border-radius: 3px;
+      transition: .3s;
+      &:hover{
+        background: #02b2b5;
+        color: #293646;
+      }
     }
   }
   .header-top:nth-child(5n){

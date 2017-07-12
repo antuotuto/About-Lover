@@ -53,13 +53,17 @@ export default {
 
   .header-top{
     height:200px;
-    background: rgba(0,0,0,0.1);
+    background: #fff;
     overflow: hidden;
     width: 19.2%;
     display: inline-block;
     margin-right: 1%;
     margin-bottom: 20px;
-    border-radius: 3px;
+    transition: .4s;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+    &:hover{
+      box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
+    }
     h2{
       background: #293646;
       padding:10px ;

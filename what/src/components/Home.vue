@@ -6,7 +6,7 @@
         <el-carousel-item v-for="item in 4" :key="item">
           <p class="animated  fadeInLeft delay_0">孙瑶瑶&王安安</p>
           <h1 class="animated  fadeInLeft delay_100">代码随心，思维不凡</h1>
-          <h2 class="animated  fadeInLeft delay_200">我想会有人问我的开始，我想现在就是我的开始</h2>
+          <h2 class="animated  fadeInLeft delay_200">如果一样东西必须结束的话，那不如让其更快些</h2>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -246,16 +246,14 @@ a {
 
     .home {
         padding: 0 50px;
-        background: #fff;
+        // background: #fff;
         width: 1300px;
         margin: 0 auto;
-        // box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
     }
     .product-all {
         height: 400px;
         background: #293646;
         color:#fff;
-        border-radius: 0 0 3px 3px;
     }
     .product-title {
         background: #293646;
@@ -263,7 +261,6 @@ a {
         margin: 20px 0;
         padding: 40px;
         font-weight: 200;
-        border-radius: 3px;
     }
     .contont-box {
         h2 {
@@ -273,7 +270,6 @@ a {
             padding: 20px;
             padding-left: 60px;
             font-weight: 200;
-            border-radius: 3px;
         }
     }
 

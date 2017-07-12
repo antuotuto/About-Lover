@@ -6,27 +6,27 @@ export const listStays0 = [
   },
   {
     title:'Tinypng',
-    text:'轮播。',
+    text:'TinyPNG uses smart lossy compression techniques to reduce the file size of your PNG files.',
     router: 'https://tinypng.com/'
   },
   {
     title:'和风天气',
-    text:'天气api。',
+    text:'和风天气目前两代版本的接口同时在线，老用户可以选择继续使用x3接口，也推荐使用全新的v5接口。新注册用户仅能使用v5接口。',
     router: 'https://www.heweather.com/'
   },
   {
     title:'Hexo',
-    text:'AngularJS诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。',
+    text:'Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。',
     router: 'https://hexo.io/zh-cn/docs/configuration.html'
   },
   {
     title:'掘金',
-    text:'React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套。',
+    text:'掘金网[1]  成立以来，致力于创新的技术和产品，同时以开放的理念，通过资源、技术共享，让用户得到好的消费体验。',
     router: 'https://juejin.im/'
   },
   {
     title:'Zendesk',
-    text:'Yeoman是Google的团队和外部贡献者团队合作开发的，他的目标是通过Grunt（一个用于开发任务自动化的命令行工具）。',
+    text:'Zendesk builds software for better customer relationships.',
     router: 'https://www.zendesk.com/'
   },
   {

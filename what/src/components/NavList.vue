@@ -37,14 +37,13 @@ a{
       background: rgba(0,0,0,.3);
       display: inline-block;
       text-align: center;
-      border-radius: 3px;
       font-size: 12px;
       a{
         color:#fff;
+        border-radius: 3px;
       }
       .router-link-active{
         background: #293646;
-        border-radius: 3px;
         color: #fff;
         font-weight: bold;
       }
@@ -62,14 +61,12 @@ a{
       background: rgba(0,0,0,.3);
       display: inline-block;
       text-align: center;
-      border-radius: 3px;
       font-size: 12px;
       a{
         color:#fff;
       }
       .router-link-active{
         background: #293646;
-        border-radius: 3px;
         color: #fff;
         font-weight: bold;
       }

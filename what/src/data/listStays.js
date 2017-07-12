@@ -36,33 +36,33 @@ export const listStays = [
   },
   {
     title:'Swiper',
-    text:'轮播。',
+    text:'Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。',
     router: 'http://www.swiper.com.cn/'
   },
   {
     title:'Koa',
-    text:'轮播。',
+    text:'Koa is a new web framework designed by the team behind Express, which aims to be a smaller, more expressive.',
     router: 'http://koa.bootcss.com/#'
   },
   {
     title:'Nod.js',
-    text:'轮播。',
+    text:'Node.js是一个基于Chrome V8 引擎的 JavaScript 运行时。 Node.js 使用高效、轻量级的事件驱动、非阻塞 I/O 模型。Node.js 之生态系统是目前最大的开源包管理系统。',
     router: 'https://nodejs.org/en/'
   },
   {
     title:'Express',
-    text:'轮播。',
+    text:'Express 是一种保持最低程度规模的灵活 Node.js Web 应用程序框架，为 Web 和移动应用程序提供一组强大的功能。',
     router: 'http://www.expressjs.com.cn/'
   },
   {
     title:'d3.js',
-    text:'Yeoman是Google的团队和外部贡献者团队合作开发的，他的目标是通过Grunt（一个用于开发任务自动化的命令行工具）。',
+    text:'D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. ',
     router: 'https://d3js.org/'
   },
   {
-    title:'Swiper',
-    text:'轮播。',
-    router: 'http://www.swiper.com.cn/'
+    title:'Echarts',
+    text:'ECharts，一个纯 Javascript 的图表库，底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。',
+    router: 'http://echarts.baidu.com/'
   },
   {
     title:'Swiper',
