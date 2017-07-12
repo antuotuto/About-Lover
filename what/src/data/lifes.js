@@ -1,19 +1,19 @@
-export const navs = [
+export const lifes = [
   {
     title:'安安的家',
-    router: '/home/1'
+    router: '/life/1'
   },
   {
     title:'关于安安',
-    router: '/home/2'
+    router: '/life/2'
   },
   {
     title:'关于安安',
-    router: '/home/3'
+    router: '/life/3'
   },
   {
     title:'关于安安',
-    router: '/home/4'
+    router: '/life/4'
   },
 
 

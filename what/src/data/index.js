@@ -7,3 +7,4 @@ export {listStays4} from './listStays4';
 export {listStays5} from './listStays5';
 export {listStays6} from './listStays6';
 export {navs} from './navs';
+export {lifes} from './lifes';
