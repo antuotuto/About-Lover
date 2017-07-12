@@ -15,6 +15,10 @@ export const navs = [
     title:'关于安安',
     router: '/home/4'
   },
+  {
+    title:'关于安安',
+    router: '/home/4'
+  },
 
 
 

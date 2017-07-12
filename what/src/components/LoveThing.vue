@@ -29,33 +29,37 @@ export default {
 
 @media screen and (max-width:900px){
   .header-top{
-    background: #1c1c1c;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    width:49%;
+    margin-right: 2%;
+    display: inline-block;
     h2{
-      background: #EA9215;
+      background: #293646;
       padding:10px ;
-      color:#303841;
+      color:#fff;
       font-size: 18px;
       font-weight: 300;
       text-align: center;
     }
+  }
+  .header-top:nth-child(2n){
+    margin-right: 0;
   }
 }
 
 @media screen and (min-width:900px){
 
   .header-top{
-    background: #1c1c1c;
     overflow: hidden;
-    width: 215px;
+    width: 19.2%;
     display: inline-block;
-    margin-right: 21px;
+    margin-right: 1%;
     margin-bottom: 15px;
     h2{
-      background: #EA9215;
+      background: #293646;
       padding:10px ;
-      color:#303841;
+      color:#fff;
       font-size: 18px;
       text-align: center;
       font-weight: 300;

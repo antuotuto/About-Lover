@@ -30,16 +30,16 @@ export default {
 
 @media screen and (max-width:900px){
   .header-top{
-    height:150px;
-    background: #1c1c1c;
+    background: rgba(0,0,0,0.1);
     overflow: hidden;
     margin-bottom: 20px;
     h2{
-      background: #EA9215;
+      background: #293646;
       padding:10px ;
       color:#303841;
       font-size: 18px;
       font-weight: 300;
+      color:#fff;
     }
     p{
       color: #99998f;
@@ -53,23 +53,24 @@ export default {
 
   .header-top{
     height:200px;
-    background: #1c1c1c;
+    background: rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 215px;
+    width: 19.2%;
     display: inline-block;
-    margin-right: 21px;
+    margin-right: 1%;
     margin-bottom: 20px;
+    border-radius: 3px;
     h2{
-      background: #EA9215;
+      background: #293646;
       padding:10px ;
-      color:#303841;
+      color:#fff;
       font-size: 18px;
       font-weight: 300;
     }
     p{
-      color:#99998f;
+      color:#293646;
       padding:10px;
-      height: 100%;
+      height: 76%;
       width: 100%;
     }
   }

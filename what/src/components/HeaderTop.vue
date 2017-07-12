@@ -31,17 +31,17 @@
       <div class="link-box">
         <h1>思考分类</h1>
         <h2>产品类</h2>
-        <navList  v-bind:an="navs"  @linkTo="linkToOn"></navList>
+        <navList v-bind:an="navs" @linkTo="linkToOn"></navList>
         <h2>生活类</h2>
-        <navList  v-bind:an="lifes"  @linkTo="linkToOn"></navList>
+        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
         <h2>生活类</h2>
-        <navList  v-bind:an="lifes"  @linkTo="linkToOn"></navList>
+        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
         <h2>生活类</h2>
-        <navList  v-bind:an="lifes"  @linkTo="linkToOn"></navList>
+        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
         <h2>生活类</h2>
-        <navList  v-bind:an="lifes"  @linkTo="linkToOn"></navList>
+        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
         <h2>生活类</h2>
-        <navList  v-bind:an="lifes"  @linkTo="linkToOn"></navList>
+        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
 
 
       </div>
@@ -70,7 +70,7 @@ export default {
     return {
       downBtn: '',
       navs: navs,
-      lifes:lifes
+      lifes: lifes
     }
   },
   methods: {
@@ -80,7 +80,7 @@ export default {
     closeBtn: function() {
       this.downBtn = '';
     },
-    linkToOn:function(){
+    linkToOn: function() {
       this.downBtn = '';
     }
   },
@@ -91,10 +91,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-a{
-  height:100%;
-  width:100%;
-  display: inline-block;
+a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
 }
 @media screen and (max-width:900px) {
     .headerTop {
@@ -103,10 +103,10 @@ a{
         left: 0;
         height: 100%;
         width: 100%;
-        background: #3c3c3c;
         transform: translate(0, -100%);
         transition: 0.4s;
         z-index: 1000;
+        background: #293646;
         &.active {
             transform: translate(0, 0);
         }
@@ -117,7 +117,7 @@ a{
         position: absolute;
         bottom: -40px;
         right: 10px;
-        background: #3c3c3c;
+        background: #02b2b5;
         i {
             text-align: center;
             width: 40px;
@@ -133,7 +133,8 @@ a{
         position: absolute;
         right: 10px;
         top: 10px;
-        background: #EA9215;
+        background: #02b2b5;
+        color:#fff;
         z-index: 1000;
         i {
             text-align: center;
@@ -158,30 +159,36 @@ a{
     .an {
         width: 120px;
         float: left;
-        padding: 0 0 15px 0;
+        padding: 0 0 15px;
         text-align: center;
-        .router-link-active{
-          background: #747373;
+        a{
+          color:#fff;
+        }
+        li:first-child{
+          background: #02b2b5;
+        }
+        .router-link-active {
+            background: #eee;
+            color:#293646;
         }
     }
     .yao {
         overflow-y: scroll;
-        background: #747373;
+        background: #eee;
         padding-left: 8px;
         padding-bottom: 15px;
-        h1{
-          background: #333;
-          padding: 10px;
-          margin: 10px 0 10px 0;
-          width:95%;
-          text-align: center;
+        h1 {
+            background: #293646;
+            padding: 10px;
+            margin: 10px 0;
+            width: 95%;
+            text-align: center;
+            border-radius: 3px;
         }
-        h2{
-          font-size: 14px;
-          margin: 5px 0;
-          // background: #333;
-          // width:100px;
-          padding: 5px;
+        h2 {
+            font-size: 14px;
+            margin: 5px 0;
+            padding: 5px;
         }
     }
     .link-box {
@@ -196,10 +203,9 @@ a{
         left: 0;
         height: 100%;
         width: 100%;
-        background: #3c3c3c;
+        background: #293646;
         transform: translate(0, -100%);
         transition: 0.4s;
-        padding: 50px;
         z-index: 1000;
         &.active {
             transform: translate(0, 0);
@@ -211,7 +217,7 @@ a{
         position: absolute;
         bottom: -50px;
         right: 10px;
-        background: #3c3c3c;
+        background: #02b2b5;
         i {
             text-align: center;
             width: 50px;
@@ -227,7 +233,9 @@ a{
         position: absolute;
         right: 10px;
         top: 10px;
-        background: #EA9215;
+        background: #02b2b5;
+        color:#fff;
+        z-index: 1000;
         i {
             text-align: center;
             width: 50px;
@@ -249,26 +257,43 @@ a{
         }
     }
     .an {
-        width: 200px;
+        width: 250px;
         float: left;
-        padding: 15px;
         text-align: center;
-        .router-link-active{
-          background: #eee;
-          color: #293646;
-          font-weight: bold;
+        li{
+          height:70px;
+          line-height: 70px;
+        }
+        li:first-child{
+          background: #02b2b5;
+        }
+        a{
+          color:#fff;
+        }
+        .router-link-active {
+            background: #eee;
+            color:#293646;
         }
     }
     .yao {
-        overflow: hidden;
-        h1{
-          margin: 5px 0;
+        overflow-y: scroll;
+        background: #eee;
+        padding: 50px;
+        h1 {
+            background: #293646;
+            padding: 30px;
+            margin: 10px 0;
+            text-align: center;
+            border-radius: 3px;
+        }
+        h2 {
+            font-size: 14px;
+            margin: 5px 0;
+            padding: 5px;
+            color:#293646;
         }
     }
     .link-box {
-        height: 100%;
-        width: 100%;
-        padding-top: 20px;
         box-sizing: border-box;
     }
 }

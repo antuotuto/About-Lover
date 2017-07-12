@@ -15,6 +15,10 @@ export const lifes = [
     title:'关于安安',
     router: '/life/4'
   },
+  {
+    title:'关于安安',
+    router: '/life/4'
+  },
 
 
 

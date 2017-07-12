@@ -37,10 +37,15 @@ a{
       background: rgba(0,0,0,.3);
       display: inline-block;
       text-align: center;
+      border-radius: 3px;
       font-size: 12px;
+      a{
+        color:#fff;
+      }
       .router-link-active{
-        background: #eee;
-        color: #293646;
+        background: #293646;
+        border-radius: 3px;
+        color: #fff;
         font-weight: bold;
       }
     }
@@ -50,14 +55,27 @@ a{
 @media screen and (min-width:900px){
   .navList{
     div{
-      width:30%;
-      height:80px;
-      line-height: 80px;
-      margin: 2px;
+      width:19.2%;
+      height:60px;
+      line-height: 60px;
+      margin-right: 1%;
       background: rgba(0,0,0,.3);
       display: inline-block;
       text-align: center;
-      font-size: 15px;
+      border-radius: 3px;
+      font-size: 12px;
+      a{
+        color:#fff;
+      }
+      .router-link-active{
+        background: #293646;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+    div:nth-child(5n){
+      margin-right: 0;
     }
   }
 }

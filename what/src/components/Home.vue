@@ -130,29 +130,34 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/css/an/an.scss";
+
 a {
     height: 100%;
     width: 100%;
 }
 @media screen and (max-width:900px) {
     .home {
-        background: #111111;
+        background: #fff;
     }
     .product-all {
         height: 400px;
-        background: #EA9215;
+        background: #293646;
+        color:#fff;
     }
     .product-title {
-        background: #303841;
+        background: #293646;
         color: #fff;
         margin: 15px 0;
         padding: 50px;
         text-align: center;
         font-weight: 200;
     }
+
     .contont-box {
+      padding: 0 20px;
         h2 {
-            background: #303841;
+            background: #293646;
             color: #fff;
             margin: 15px 0;
             padding: 20px;
@@ -160,9 +165,7 @@ a {
             font-weight: 200;
         }
     }
-    .contont-box {
-        padding: 0 20px;
-    }
+
     .el-carousel__item p {
         font-size: 17px;
         padding: 100px 50px 10px;
@@ -189,7 +192,7 @@ a {
             line-height: 100px;
             font-size: 20px;
             font-weight: 100;
-            background: #303841;
+            background: #293646;
             letter-spacing: 1px;
         }
     }
@@ -220,31 +223,36 @@ a {
     }
 
     .home {
-        padding: 0 20px;
-        background: #111111;
-        width: 1200px;
+        padding: 0 50px;
+        background: #fff;
+        width: 1300px;
         margin: 0 auto;
+        // box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
     }
     .product-all {
         height: 400px;
-        background: #EA9215;
+        background: #293646;
+        color:#fff;
+        border-radius: 0 0 3px 3px;
     }
     .product-title {
-        background: #303841;
+        background: #293646;
         color: #fff;
         margin: 20px 0;
         padding: 60px;
         text-align: center;
         font-weight: 200;
+        border-radius: 3px;
     }
     .contont-box {
         h2 {
-            background: #303841;
+            background: #293646;
             color: #fff;
             margin: 20px 0;
             padding: 15px;
             text-align: center;
             font-weight: 200;
+            border-radius: 3px;
         }
     }
 
@@ -255,7 +263,7 @@ a {
             line-height: 300px;
             font-size: 40px;
             font-weight: 100;
-            background: #303841;
+            background: #293646;
             letter-spacing: 1px;
             margin-top: 80px;
         }
