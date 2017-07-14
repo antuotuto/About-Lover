@@ -1,50 +1,30 @@
 <template>
 <div class="headerTop" :class="downBtn">
-  <div class="downButton" @click="listDown">
-    <i class="icon iconfont icon-sortlight"></i>
-  </div>
-  <span class="closeBtn" @click="closeBtn">
-      <i class="icon iconfont icon-close"></i>
-    </span>
+  <router-link to="/home" class="closeBtn">
+    <i class="icon iconfont icon-close"></i>
+  </router-link>
   <div class="kind">
-    <ul class="an list animated fadeInDown delay_0">
+    <ul class="an list animated fadeInUp delay_0">
       <li>
-        王安安
       </li>
       <li>
-        <router-link to="/home/1">前端思考</router-link>
+        <router-link to="/headerTop/1">导航</router-link>
       </li>
       <li>
-        <router-link to="/home/2">心中颜色</router-link>
+        <router-link to="/headerTop/2">前端</router-link>
       </li>
       <li>
-        <router-link to="/home/3">我的彩色</router-link>
+        <router-link to="/headerTop/3">颜色</router-link>
       </li>
       <li>
-        <router-link to="/home/4">思考态度</router-link>
+        <router-link to="/headerTop/4">看法</router-link>
       </li>
       <li>
-        <router-link to="/home/5">与其思考</router-link>
+        <router-link to="/headerTop/5">人生</router-link>
       </li>
     </ul>
     <div class="yao list animated fadeInDown delay_0">
-      <div class="link-box">
-        <h1>思考分类</h1>
-        <h2>产品类</h2>
-        <navList v-bind:an="navs" @linkTo="linkToOn"></navList>
-        <h2>生活类</h2>
-        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
-        <h2>生活类</h2>
-        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
-        <h2>生活类</h2>
-        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
-        <h2>生活类</h2>
-        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
-        <h2>生活类</h2>
-        <navList v-bind:an="lifes" @linkTo="linkToOn"></navList>
-
-
-      </div>
+      <router-view></router-view>
     </div>
   </div>
 
@@ -53,24 +33,11 @@
 </template>
 
 <script>
-import navList from '@/components/NavList'
-
-import {
-  navs
-} from '@/data/navs'
-
-import {
-  lifes
-} from '@/data/lifes'
-
-
 export default {
   name: 'headerTop',
   data() {
     return {
       downBtn: '',
-      navs: navs,
-      lifes: lifes
     }
   },
   methods: {
@@ -83,10 +50,8 @@ export default {
     linkToOn: function() {
       this.downBtn = '';
     }
-  },
-  components: {
-    navList
   }
+
 }
 </script>
 
@@ -103,13 +68,9 @@ a {
         left: 0;
         height: 100%;
         width: 100%;
-        transform: translate(0, -100%);
         transition: 0.4s;
-        z-index: 1000;
+        z-index: 1100;
         background: #293646;
-        &.active {
-            transform: translate(0, 0);
-        }
     }
     .downButton {
         height: 40px;
@@ -131,10 +92,10 @@ a {
         height: 40px;
         width: 40px;
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 5px;
+        top: 5px;
         background: #02b2b5;
-        color:#fff;
+        color: #fff;
         z-index: 1000;
         i {
             text-align: center;
@@ -161,55 +122,36 @@ a {
         float: left;
         padding: 0 0 15px;
         text-align: center;
-        a{
-          color:#fff;
+        a {
+            color: #fff;
         }
         // li:first-child{
         //   background: #02b2b5;
         // }
         .router-link-active {
             background: #eee;
-            color:#293646;
+            color: #293646;
         }
     }
     .yao {
-        overflow-y: scroll;
-        background: #eee;
-        padding-left: 8px;
-        padding-bottom: 15px;
-        h1 {
-            background: #293646;
-            padding: 10px;
-            margin: 10px 0;
-            width: 95%;
-            text-align: center;
-        }
-        h2 {
-            font-size: 14px;
-            margin: 5px 0;
-            padding: 5px;
-            color:#293646;
-        }
-    }
-    .link-box {
-        box-sizing: border-box;
+        height: 100%;
+        overflow: hidden;
     }
 
 }
 @media screen and (min-width:900px) {
     .headerTop {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
         background: #293646;
-        transform: translate(0, -100%);
-        transition: 0.4s;
-        z-index: 1000;
-        &.active {
-            transform: translate(0, 0);
-        }
+        z-index: 1100;
+        // transform: translate(0, -100%);
+        // &.active {
+        //     transform: translate(0, 0);
+        // }
     }
     .downButton {
         height: 50px;
@@ -231,10 +173,10 @@ a {
         height: 50px;
         width: 50px;
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 0;
+        top: 0;
         background: #02b2b5;
-        color:#fff;
+        color: #fff;
         z-index: 1000;
         i {
             text-align: center;
@@ -260,40 +202,24 @@ a {
         width: 250px;
         float: left;
         text-align: center;
-        li{
-          height:70px;
-          line-height: 70px;
+        li {
+            height: 70px;
+            line-height: 70px;
         }
         // li:first-child{
         //   background: #02b2b5;
         // }
-        a{
-          color:#fff;
+        a {
+            color: #fff;
         }
         .router-link-active {
             background: #eee;
-            color:#293646;
+            color: #293646;
         }
     }
     .yao {
-        overflow-y: scroll;
-        background: #eee;
-        padding: 50px;
-        h1 {
-            background: #293646;
-            padding: 30px;
-            margin: 10px 0;
-            text-align: center;
-        }
-        h2 {
-            font-size: 14px;
-            margin: 5px 0;
-            padding: 5px;
-            color:#293646;
-        }
-    }
-    .link-box {
-        box-sizing: border-box;
+        overflow: hidden;
+        height: 100%;
     }
 }
 </style>

@@ -1,4 +1,4 @@
-export const listStays0 = [
+export const otherSkill = [
   {
     title:'七牛云',
     text:'七牛云，中国企业级公有云服务商，致力于打造以数据为核心的场景化PaaS服务。围绕富媒体场景，七牛先后推出了对象存储，融合CDN加速，直播云。',

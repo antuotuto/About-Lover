@@ -1,4 +1,4 @@
-export const loves1 = [
+export const beautyLearns = [
   {
     title:'极客学院',
     text:'Vue.js是一个构建数据驱动的 web 界面的渐进式框架, API 实现响应的数据绑定和组合的视图组件。',
@@ -25,9 +25,9 @@ export const loves1 = [
     router: 'http://www.ruanyifeng.com/blog/'
   },
   {
-    title:'Github',
+    title:'优达学城',
     text:'GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。',
-    router: 'https://github.com/'
+    router: 'https://cn.udacity.com/'
   },
   {
     title:'Element',

@@ -1,4 +1,4 @@
-export const listStays4 = [
+export const mobilePhones = [
   {
     title:'Apple',
     text:'Vue.js是一个构建数据驱动的 web 界面的渐进式框架, API 实现响应的数据绑定和组合的视图组件。',

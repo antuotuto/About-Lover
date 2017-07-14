@@ -29,6 +29,7 @@ a{
 }
 @media screen and (max-width:900px){
   .navList{
+    padding: 5px;
     div{
       width:30%;
       height:60px;
@@ -53,6 +54,7 @@ a{
 
 @media screen and (min-width:900px){
   .navList{
+    padding: 15px;
     div{
       width:19.2%;
       height:60px;
@@ -76,10 +78,6 @@ a{
     }
   }
 }
-
-
-
-
 
 
 </style>

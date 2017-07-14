@@ -1,4 +1,4 @@
-export const listStays2 = [
+export const designs = [
   {
     title:'Material Design',
     text:'Material Design，中文名：材料设计语言，是由Google推出的全新的设计语言，谷歌表示，这种设计语言旨在为手机、平板电脑、台式机和“其他平台”提供更一致。',

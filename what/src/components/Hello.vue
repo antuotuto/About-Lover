@@ -13,18 +13,29 @@ export default {
     return {
 
     }
-  }
+  },
+  components: {
+
+  },
+  methods: {
+
+  },
+  watch:{
+  },
+  created() {
+
+  },
 }
 </script>
 
 <style scoped lang="scss">
-@import "../assets/css/an/an.scss";
-
-.hello{
+@media screen and (max-width:900px){
 
 }
 
+@media screen and (min-width:900px){
 
+}
 
 
 </style>

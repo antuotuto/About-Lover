@@ -1,9 +1,6 @@
 <template>
   <div class="life">
-
     <list-life></list-life>
-
-
   </div>
 </template>
 

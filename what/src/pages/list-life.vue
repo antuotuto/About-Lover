@@ -56,7 +56,7 @@ h4{
 
 .content-text {
     background: #f7f7f7;
-    padding: 30px;
+    padding: 20px;
     border-radius: 2px;
     color: #b3b3b3;
 }
@@ -65,6 +65,7 @@ h4{
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 400;
+    padding-bottom: 30px;
 }
 
 .content-2 {

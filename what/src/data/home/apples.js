@@ -1,4 +1,4 @@
-export const listStays1 = [
+export const apples = [
   {
     title:'Macbook pro',
     text:'2016年10月28日，加入Touch Bar的新款MacBook Pro发布，售价13888元起。',

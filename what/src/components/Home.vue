@@ -6,7 +6,7 @@
         <el-carousel-item v-for="item in 4" :key="item">
           <p class="animated  fadeInLeft delay_0">孙瑶瑶&王安安</p>
           <h1 class="animated  fadeInLeft delay_100">代码随心，思维不凡</h1>
-          <h2 class="animated  fadeInLeft delay_200">如果一样东西必须结束的话，那不如让其更快些</h2>
+          <h2 class="animated  fadeInLeft delay_200">代码的意义在于，你可以让已经很美的物体变得更美</h2>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -14,71 +14,64 @@
   <div class="contont-box">
     <h1 class="product-title">前端技术</h1>
     <div class="product-box">
-      <love v-bind:an="listStays"></love>
+      <love v-bind:an="fronts"></love>
     </div>
 
     <h2>前端美站</h2>
     <div class="product-box">
-      <loveThing v-bind:an="loves"></loveThing>
+      <loveThing v-bind:an="bifukaStations"></loveThing>
     </div>
 
     <h1 class="product-title">其他技术</h1>
     <div class="product-box">
-      <love v-bind:an="listStays0"></love>
+      <love v-bind:an="otherSkill"></love>
     </div>
 
     <h2>技术美站</h2>
     <div class="product-box">
-      <loveThing v-bind:an="loves0"></loveThing>
+      <loveThing v-bind:an="beautySkills"></loveThing>
     </div>
 
     <h1 class="product-title">设计需求</h1>
     <div class="product-box">
-      <love v-bind:an="listStays2"></love>
+      <love v-bind:an="designs"></love>
     </div>
 
     <h2>设计美站</h2>
     <div class="product-box">
-      <loveThing v-bind:an="loves1"></loveThing>
+      <loveThing v-bind:an="beautyDesigns"></loveThing>
     </div>
 
     <h1 class="product-title">Apple</h1>
     <div class="product-box">
-      <love v-bind:an="listStays1"></love>
+      <love v-bind:an="apples"></love>
     </div>
 
     <h1 class="product-title">Mobile Phone</h1>
     <div class="product-box">
-      <love v-bind:an="listStays4"></love>
+      <love v-bind:an="mobilePhones"></love>
     </div>
 
     <h1 class="product-title">Computer</h1>
     <div class="product-box">
-      <love v-bind:an="listStays5"></love>
+      <love v-bind:an="computers"></love>
     </div>
 
     <h1 class="product-title">电子新闻</h1>
     <div class="product-box">
-      <love v-bind:an="listStays6"></love>
+      <love v-bind:an="news"></love>
     </div>
 
     <h2>学习美站</h2>
     <div class="product-box">
-      <loveThing v-bind:an="loves2"></loveThing>
+      <loveThing v-bind:an="beautyLearns"></loveThing>
     </div>
-
-
-
-
-
 
   </div>
 
   <div class="end">
     <p>不为设计而设计 为美而付出一切</p>
   </div>
-
-
 </div>
 </template>
 
@@ -86,62 +79,54 @@
 import love from '@/components/Love'
 import loveThing from '@/components/LoveThing'
 import {
-  listStays
-} from '@/data/listStays'
+  fronts
+} from '@/data/home'
 import {
-  listStays0
-} from '@/data/listStays0'
+  otherSkill
+} from '@/data/home'
 import {
-  listStays1
-} from '@/data/listStays1'
+  apples
+} from '@/data/home'
 import {
-  listStays2
-} from '@/data/listStays2'
+  designs
+} from '@/data/home'
 import {
-  listStays3
-} from '@/data/listStays3'
+  mobilePhones
+} from '@/data/home'
 import {
-  listStays4
-} from '@/data/listStays4'
+  computers
+} from '@/data/home'
 import {
-  listStays5
-} from '@/data/listStays5'
+  news
+} from '@/data/home'
 import {
-  listStays6
-} from '@/data/listStays6'
-import {
-  listStays7
-} from '@/data/listStays7'
-import {
-  loves
+  bifukaStations
 } from '@/data/love'
 import {
-  loves0
+  beautySkills
 } from '@/data/love'
 import {
-  loves1
+  beautyDesigns
 } from '@/data/love'
 import {
-  loves2
+  beautyLearns
 } from '@/data/love'
 
 export default {
   name: 'home',
   data() {
     return {
-      listStays: listStays,
-      listStays0: listStays0,
-      listStays1: listStays1,
-      listStays2: listStays2,
-      listStays3: listStays3,
-      listStays4: listStays4,
-      listStays5: listStays5,
-      listStays6: listStays6,
-      listStays7: listStays7,
-      loves,loves,
-      loves0,loves0,
-      loves1,loves1,
-      loves2,loves2
+      fronts: fronts,
+      otherSkill: otherSkill,
+      apples: apples,
+      designs: designs,
+      mobilePhones: mobilePhones,
+      computers: computers,
+      news: news,
+      bifukaStations,bifukaStations,
+      beautySkills,beautySkills,
+      beautyDesigns,beautyDesigns,
+      beautyLearns,beautyLearns
     }
   },
   components: {
@@ -152,8 +137,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/css/an/an.scss";
-
 a {
     height: 100%;
     width: 100%;

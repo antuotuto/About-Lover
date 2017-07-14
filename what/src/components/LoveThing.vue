@@ -25,7 +25,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/css/an/an.scss";
 
 @media screen and (max-width:900px){
   .header-top{
