@@ -90,7 +90,7 @@ export default {
         h2 {
             font-size: 14px;
             margin: 5px 0;
-            padding: 5px;
+            padding: 20px 20px 0 80px;
             color: #293646;
         }
     }

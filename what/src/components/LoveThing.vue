@@ -54,7 +54,7 @@ export default {
     display: inline-block;
     margin-right: 1%;
     margin-bottom: 5px;
-    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.02);
     h2{
       color:#fff;
       height:40px;

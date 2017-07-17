@@ -235,7 +235,7 @@ a {
     }
     .product-all {
         height: 400px;
-        background: #293646;
+        background: #02b2b5;
         color:#fff;
     }
     .product-title {
@@ -248,12 +248,12 @@ a {
     }
     .contont-box {
         h2 {
-            background: #02b2b5;
-            color: #fff;
-            margin: 10px 0;
+            background: #fff;
+            color: #293646;
+            margin: 10px 0 20px 0;
             padding: 10px;
-            padding-left: 60px;
             font-weight: 200;
+            text-align: center;
         }
     }
 
@@ -264,7 +264,7 @@ a {
             line-height: 300px;
             font-size: 40px;
             font-weight: 100;
-            background: #293646;
+            background: #02b2b5;
             letter-spacing: 1px;
             margin-top: 80px;
         }

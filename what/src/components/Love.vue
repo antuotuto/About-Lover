@@ -61,7 +61,7 @@ export default {
     margin-right: 1%;
     margin-bottom: 20px;
     transition: .4s;
-    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.02);
     position: relative;
     &:hover{
       div{

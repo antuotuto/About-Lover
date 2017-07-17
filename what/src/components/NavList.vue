@@ -54,7 +54,7 @@ a{
 
 @media screen and (min-width:900px){
   .navList{
-    padding: 15px;
+    padding: 20px 20px 0 80px;
     div{
       width:19.2%;
       height:60px;
