@@ -239,18 +239,19 @@ a {
         color:#fff;
     }
     .product-title {
-        background: #293646;
+        background: #02b2b5;
         color: #fff;
         margin: 20px 0;
-        padding: 40px;
+        padding: 20px;
+        padding-left: 60px;
         font-weight: 200;
     }
     .contont-box {
         h2 {
-            background: #293646;
+            background: #02b2b5;
             color: #fff;
             margin: 10px 0;
-            padding: 20px;
+            padding: 10px;
             padding-left: 60px;
             font-weight: 200;
         }

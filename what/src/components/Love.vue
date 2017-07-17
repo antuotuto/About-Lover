@@ -3,8 +3,10 @@
     <div class="header-top"  v-for="(nav,index) in listStays" :key="nav.title">
       <a :href="nav.router" target="_blank">
         <h2>{{ nav.title }}</h2>
-        <p>{{ nav.text}} </p>
       </a>
+        <div class="">
+          <p>{{ nav.text}} </p>
+        </div>
     </div>
   </div>
 </template>
@@ -52,30 +54,49 @@ export default {
 @media screen and (min-width:900px){
 
   .header-top{
-    height:200px;
+    height:40px;
     background: #fff;
-    overflow: hidden;
     width: 19.2%;
     display: inline-block;
     margin-right: 1%;
     margin-bottom: 20px;
     transition: .4s;
     box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+    position: relative;
     &:hover{
-      box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
+      div{
+        height: 180px;
+        top:40px;
+        box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
+      }
+      h2{
+        background: #293646;
+        color:#fff;
+      }
     }
     h2{
-      background: #293646;
-      padding:10px ;
-      color:#fff;
+      background: #fff;
+      color:#293646;
+      line-height: 40px;
       font-size: 18px;
       font-weight: 300;
+      padding-left: 15px;
+      text-align: center;
     }
     p{
+      padding: 15px;
+    }
+    div{
       color:#293646;
-      padding:10px;
-      height: 76%;
       width: 100%;
+      height:0;
+      overflow: hidden;
+      position: absolute;
+      top:0;
+      left:0;
+      background: #fff;
+      z-index: 100;
+      transition: .3s;
     }
   }
   .header-top:nth-child(5n){

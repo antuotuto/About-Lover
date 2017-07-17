@@ -88,6 +88,7 @@ export default {
   }
   ::-webkit-scrollbar {
       width: 4px;
+      height:4px;
       background: rgba(0,0,0,.08);
   }
 

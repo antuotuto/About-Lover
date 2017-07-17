@@ -54,17 +54,20 @@ export default {
     display: inline-block;
     margin-right: 1%;
     margin-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
     h2{
-      background: #293646;
-      padding:10px ;
       color:#fff;
+      height:40px;
+      line-height: 40px;
       font-size: 18px;
       text-align: center;
       font-weight: 300;
       transition: .3s;
+      background: #fff;
+      color: #293646;
       &:hover{
-        background: #02b2b5;
-        color: #293646;
+        background: #293646;
+        color: #fff;
       }
     }
   }
