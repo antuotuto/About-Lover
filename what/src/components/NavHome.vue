@@ -56,13 +56,14 @@ export default {
 
 <style scoped lang="scss">@media screen and (max-width:900px) {
     .navHome {
-        background: #eee;
+        background: #242299;
         padding-bottom: 15px;
         height: 100%;
         overflow-y: scroll;
         h1 {
-            background: #293646;
-            height:50px;
+            background: #e4e166;
+            color: #242299;
+            height: 50px;
             line-height: 50px;
             font-size: 25px;
             padding-left: 28px;
@@ -71,19 +72,19 @@ export default {
             font-size: 14px;
             margin: 5px 0;
             padding: 5px;
-            color: #293646;
+            color: #fff;
         }
     }
 }
 @media screen and (min-width:900px) {
     .navHome {
-        background: #eee;
+        background: #242299;
         height: 100%;
         overflow-y: scroll;
         h1 {
-            background: #293646;
-            text-align: center;
-            height:70px;
+            background: #e4e166;
+            color: #242299;
+            height: 70px;
             line-height: 70px;
             font-size: 25px;
         }
@@ -91,7 +92,7 @@ export default {
             font-size: 14px;
             margin: 5px 0;
             padding: 20px 20px 0 80px;
-            color: #293646;
+            color: #fff;
         }
     }
 }

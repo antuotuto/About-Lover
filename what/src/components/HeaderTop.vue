@@ -4,7 +4,7 @@
     <i class="icon iconfont icon-close"></i>
   </router-link>
   <div class="kind">
-    <ul class="an list animated fadeInUp delay_0">
+    <ul class="an list ">
       <li>
       </li>
       <li>
@@ -23,7 +23,7 @@
         <router-link to="/headerTop/5">人生</router-link>
       </li>
     </ul>
-    <div class="yao list animated fadeInDown delay_0">
+    <div class="yao list ">
       <router-view></router-view>
     </div>
   </div>
@@ -70,37 +70,21 @@ a {
         width: 100%;
         transition: 0.4s;
         z-index: 1100;
-        background: #293646;
-    }
-    .downButton {
-        height: 40px;
-        width: 40px;
-        position: absolute;
-        bottom: -40px;
-        right: 10px;
-        background: #02b2b5;
-        i {
-            text-align: center;
-            width: 40px;
-            line-height: 40px;
-            display: inline-block;
-            color: #fff;
-            font-size: 20px;
-        }
+        background: #e4e166;
     }
     .closeBtn {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         position: absolute;
-        right: 5px;
-        top: 5px;
-        background: #02b2b5;
-        color: #fff;
+        right: 10px;
+        top: 10px;
+        color: #242299;
         z-index: 1000;
+        border: 1px solid #242299;
         i {
             text-align: center;
-            width: 40px;
-            line-height: 40px;
+            width: 30px;
+            line-height: 30px;
             display: inline-block;
             font-size: 20px;
         }
@@ -123,14 +107,14 @@ a {
         padding: 0 0 15px;
         text-align: center;
         a {
-            color: #fff;
+            color: #242299;
         }
         // li:first-child{
         //   background: #02b2b5;
         // }
         .router-link-active {
-            background: #eee;
-            color: #293646;
+            background: #242299;
+            color: #fff;
         }
     }
     .yao {
@@ -146,42 +130,27 @@ a {
         left: 0;
         height: 100%;
         width: 100%;
-        background: #293646;
+        background: #e4e166;
         z-index: 1100;
         // transform: translate(0, -100%);
         // &.active {
         //     transform: translate(0, 0);
         // }
     }
-    .downButton {
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        bottom: -50px;
-        right: 10px;
-        background: #02b2b5;
-        i {
-            text-align: center;
-            width: 50px;
-            line-height: 50px;
-            display: inline-block;
-            color: #fff;
-            font-size: 25px;
-        }
-    }
     .closeBtn {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         position: absolute;
-        right: 0;
-        top: 0;
-        background: #02b2b5;
-        color: #fff;
+        right: 15px;
+        top: 15px;
+        // background: #242299;
+        color: #242299;
         z-index: 1000;
+        border: 1px solid #242299;
         i {
             text-align: center;
-            width: 50px;
-            line-height: 50px;
+            width: 40px;
+            line-height: 40px;
             display: inline-block;
             font-size: 25px;
         }
@@ -199,7 +168,7 @@ a {
         }
     }
     .an {
-        width: 250px;
+        width: 50%;
         float: left;
         text-align: center;
         li {
@@ -210,11 +179,11 @@ a {
         //   background: #02b2b5;
         // }
         a {
-            color: #fff;
+            color: #242299;
         }
         .router-link-active {
-            background: #eee;
-            color: #293646;
+            background: #242299;
+            color: #fff;
         }
     }
     .yao {

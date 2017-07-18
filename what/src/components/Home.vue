@@ -123,10 +123,14 @@ export default {
       mobilePhones: mobilePhones,
       computers: computers,
       news: news,
-      bifukaStations,bifukaStations,
-      beautySkills,beautySkills,
-      beautyDesigns,beautyDesigns,
-      beautyLearns,beautyLearns
+      bifukaStations,
+      bifukaStations,
+      beautySkills,
+      beautySkills,
+      beautyDesigns,
+      beautyDesigns,
+      beautyLearns,
+      beautyLearns
     }
   },
   components: {
@@ -147,11 +151,11 @@ a {
     }
     .product-all {
         height: 400px;
-        background: #293646;
-        color:#fff;
+        background: #e4e166;
+        color: #242299;
     }
     .product-title {
-        background: #293646;
+        background: #242299;
         color: #fff;
         margin: 10px 0;
         padding: 50px;
@@ -160,9 +164,9 @@ a {
     }
 
     .contont-box {
-      padding: 0 10px;
+        padding: 0 10px;
         h2 {
-            background: #293646;
+            background: #242299;
             color: #fff;
             margin: 10px 0;
             padding: 20px;
@@ -192,12 +196,12 @@ a {
     }
     .end {
         p {
+            background: #242299;
             color: #fff;
             text-align: center;
             line-height: 100px;
             font-size: 20px;
             font-weight: 100;
-            background: #293646;
             letter-spacing: 1px;
         }
     }
@@ -228,32 +232,29 @@ a {
     }
 
     .home {
-        padding: 0 50px;
-        // background: #fff;
-        width: 1300px;
+        width: 90%;
         margin: 0 auto;
     }
     .product-all {
         height: 400px;
-        background: #02b2b5;
-        color:#fff;
+        background: #e4e166;
+        color: #242299;
     }
     .product-title {
-        background: #02b2b5;
+        background: #242299;
         color: #fff;
         margin: 20px 0;
-        padding: 20px;
-        padding-left: 60px;
+        padding: 20px 20px 20px 60px;
         font-weight: 200;
     }
     .contont-box {
         h2 {
-            background: #fff;
-            color: #293646;
-            margin: 10px 0 20px 0;
+            background: #242299;
+            color: #fff;
+            margin: 10px 0 20px;
             padding: 10px;
             font-weight: 200;
-            text-align: center;
+            padding-left: 60px;
         }
     }
 
@@ -264,7 +265,7 @@ a {
             line-height: 300px;
             font-size: 40px;
             font-weight: 100;
-            background: #02b2b5;
+            background: #242299;
             letter-spacing: 1px;
             margin-top: 80px;
         }

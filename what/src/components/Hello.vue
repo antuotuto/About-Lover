@@ -1,15 +1,15 @@
 <template>
-  <div class="hello">
+<div class="hello">
 
 
 
-  </div>
+</div>
 </template>
 
 <script>
 export default {
   name: 'hello',
-  data () {
+  data() {
     return {
 
     }
@@ -20,22 +20,15 @@ export default {
   methods: {
 
   },
-  watch:{
-  },
+  watch: {},
   created() {
 
   },
 }
 </script>
 
-<style scoped lang="scss">
-@media screen and (max-width:900px){
-
-}
-
-@media screen and (min-width:900px){
-
-}
-
-
+<style scoped lang="scss">@media screen and (max-width:900px) {
+    }
+@media screen and (min-width:900px) {
+    }
 </style>

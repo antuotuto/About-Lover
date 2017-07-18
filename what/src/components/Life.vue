@@ -1,7 +1,7 @@
 <template>
-  <div class="life">
-    <list-life></list-life>
-  </div>
+<div class="life">
+  <list-life></list-life>
+</div>
 </template>
 
 <script>
@@ -9,23 +9,17 @@ import ListLife from '@/pages/list-life.vue';
 
 export default {
   name: 'life',
-  data () {
+  data() {
     return {
 
     }
   },
   components: {
-      ListLife
+    ListLife
   }
 }
 </script>
 
 <style scoped lang="scss">
-
-.life{
-}
-
-
-
-
+.life {}
 </style>
