@@ -1,7 +1,7 @@
 <template>
-<div class="headerTop" :class="downBtn">
-  <router-link to="/home" class="closeBtn">
-    <i class="icon iconfont icon-round"></i>
+<div class="headerTop animated  fadeIn delay_0" :class="downBtn">
+  <router-link to="/home"  class="closeBtn" @click="goBack">
+    <i class="icon iconfont icon-shanchu2"></i>
   </router-link>
   <div class="kind">
     <ul class="an list ">
@@ -27,8 +27,6 @@
       <router-view></router-view>
     </div>
   </div>
-
-
 </div>
 </template>
 
@@ -49,6 +47,9 @@ export default {
     },
     linkToOn: function() {
       this.downBtn = '';
+    },
+    goBack:function(){
+      window.history.go(-1);
     }
   }
 
@@ -78,9 +79,9 @@ a {
         position: absolute;
         right: 10px;
         top: 10px;
-        color: #242299;
+        color: #e4e166;
         z-index: 1000;
-        border: 1px solid #242299;
+        border: 1px solid #e4e166;
         i {
             text-align: center;
             width: 30px;
@@ -109,9 +110,6 @@ a {
         a {
             color: #242299;
         }
-        // li:first-child{
-        //   background: #02b2b5;
-        // }
         .router-link-active {
             background: #242299;
             color: #fff;
@@ -143,10 +141,9 @@ a {
         position: absolute;
         right: 15px;
         top: 15px;
-        // background: #242299;
-        color: #242299;
+        color: #e4e166;
         z-index: 1000;
-        border: 1px solid #242299;
+        border: 1px solid #e4e166;
         i {
             text-align: center;
             width: 40px;

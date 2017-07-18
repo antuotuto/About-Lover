@@ -68,12 +68,12 @@ export default {
         height: 100%;
         overflow-y: scroll;
         h1 {
-            background: #e4e166;
-            color: #242299;
+            background: #242299;
+            color: #e4e166;
             height: 50px;
             line-height: 50px;
             font-size: 25px;
-            padding-left: 28px;
+            text-align: center;
         }
         h2 {
             font-size: 14px;
@@ -89,8 +89,9 @@ export default {
         height: 100%;
         overflow-y: scroll;
         h1 {
-            background: #e4e166;
-            color: #242299;
+            background: #242299;
+            color: #e4e166;
+            text-align: center;
             height: 70px;
             line-height: 70px;
             font-size: 25px;
