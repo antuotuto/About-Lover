@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <router-link to="/headerTop" class="downButton">
-    <i class="icon iconfont icon-sortlight"></i>
+    <i class="icon iconfont icon-liebiao2"></i>
   </router-link>
   <router-view></router-view>
 </div>

@@ -6,6 +6,8 @@ import NotFoundComponent from '@/pages/404'
 import Life from '@/components/Life'
 import HeaderTop from '@/components/HeaderTop'
 import NavHome from '@/components/NavHome'
+import Music from '@/pages/Music'
+import MusicPlay from '@/pages/MusicPlay'
 
 
 Vue.use(Router)
@@ -78,6 +80,9 @@ export default new Router({
             component: NavHome
         }
       ]
+    },{
+      path: '/music',
+      component: Music,
     },{
         path: '*',
         component: NotFoundComponent

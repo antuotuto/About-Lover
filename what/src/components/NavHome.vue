@@ -5,6 +5,8 @@
   <navList v-bind:an="homes"></navList>
   <h2>理想</h2>
   <navList v-bind:an="thinks"></navList>
+  <h2>音乐</h2>
+  <navList v-bind:an="musics"></navList>
 </div>
 </template>
 
@@ -23,6 +25,10 @@ import {
   colors
 } from '@/data/nav'
 
+import {
+  musics
+} from '@/data/nav'
+
 
 export default {
   name: 'navHome',
@@ -31,7 +37,8 @@ export default {
       navs: homes,
       homes: homes,
       thinks: thinks,
-      colors: colors
+      colors: colors,
+      musics:musics
     }
   },
   components: {

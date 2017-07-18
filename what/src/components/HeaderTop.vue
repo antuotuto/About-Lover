@@ -1,7 +1,7 @@
 <template>
 <div class="headerTop" :class="downBtn">
   <router-link to="/home" class="closeBtn">
-    <i class="icon iconfont icon-close"></i>
+    <i class="icon iconfont icon-round"></i>
   </router-link>
   <div class="kind">
     <ul class="an list ">
@@ -168,7 +168,7 @@ a {
         }
     }
     .an {
-        width: 50%;
+        width: 35%;
         float: left;
         text-align: center;
         li {
