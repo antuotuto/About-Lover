@@ -172,6 +172,7 @@ a {
             padding: 20px;
             text-align: center;
             font-weight: 200;
+            font-size: 18px;
         }
     }
 
