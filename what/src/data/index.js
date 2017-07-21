@@ -1,2 +1,1 @@
-export {listStays3} from './listStays3';
-export {listStays7} from './listStays7';
+export {javascript1} from './javascript1';
