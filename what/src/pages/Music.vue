@@ -20,7 +20,8 @@
     </div>
   </div>
   <hr/>
-  <p class="end">end</p>
+  <p class="end"  v-text="nickName"></p>
+
   <audio :src="music" controls="controls"></audio>
 </div>
 </template>
@@ -30,6 +31,8 @@ import {
   listStays7
 } from '@/data/listStays7'
 
+import { mapState } from 'vuex';
+
 export default {
   name: 'music',
   data() {
@@ -38,11 +41,18 @@ export default {
       music:'http://dl.stream.qqmusic.qq.com/C400002pbuTt08pUya.m4a?vkey=D55701C914D0EC79C653A7A4C3420700415C39820B21F4C600C7AE5D0B6FEA74477D0A5E001FDD5C9B3B277E51F253BC014F8902600CEFAE&guid=8385945068&uin=675988829&fromtag=66'
     }
   },
+  computed:{
+    ...mapState(['nickName','cartCount'])
+    // nickName(){
+    //   return this.$store.state.nickName;
+    //   this.$store.commit("updateCartCount",'传入值');
+    // },
+  },
   components: {
 
   },
   methods: {
-    
+
   },
   watch: {},
   created() {

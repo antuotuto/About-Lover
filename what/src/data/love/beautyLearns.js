@@ -1,58 +1,73 @@
 export const beautyLearns = [
   {
-    title:'极客学院',
+    title:'HTML',
     text:'Vue.js是一个构建数据驱动的 web 界面的渐进式框架, API 实现响应的数据绑定和组合的视图组件。',
-    router: 'http://www.jikexueyuan.com/'
+    router: 'https://pan.baidu.com/s/1pLodyRp'
   },
   {
-    title:'慕课网',
+    title:'CSS',
     text:'AngularJS诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。',
-    router: 'http://www.imooc.com/'
+    router: 'https://pan.baidu.com/s/1dE9Mns9'
   },
   {
-    title:'千锋网',
+    title:'JavaScript',
     text:'React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套。',
-    router: 'http://www.qfedu.com/?pinzhuan=biaoti'
+    router: 'https://pan.baidu.com/s/1slO7gap'
   },
   {
-    title:'吕大神',
+    title:'jQuery',
     text:'高手1。',
-    router: 'http://phoeshow.github.io/2016/07/07/css%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%8F%8D%E8%BD%AC%E6%95%88%E6%9E%9C/'
+    router: 'https://pan.baidu.com/s/1hsaK28k'
   },
   {
-    title:'阮一峰',
+    title:'HTML5',
     text:'AngularJS诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。',
-    router: 'http://www.ruanyifeng.com/blog/'
+    router: 'https://pan.baidu.com/s/1gfoZDEr'
   },
   {
-    title:'优达学城',
+    title:'CSS3',
     text:'GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。',
-    router: 'https://cn.udacity.com/'
+    router: 'https://pan.baidu.com/s/1jHPlafG'
   },
   {
-    title:'Element',
+    title:'Ajax',
     text:'Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助你的网站快速成型。',
-    router: 'http://element.eleme.io/#/zh-CN'
+    router: 'https://pan.baidu.com/s/1c1602x6'
   },
   {
-    title:'Swiper',
+    title:'移动Web开发',
     text:'轮播。',
-    router: 'http://www.swiper.com.cn/'
+    router: 'https://pan.baidu.com/s/1hsOj0aC'
   },
   {
-    title:'Swiper',
+    title:'Canvas',
     text:'轮播。',
-    router: 'http://www.swiper.com.cn/'
+    router: 'https://pan.baidu.com/s/1dEV0PgP'
   },
   {
-    title:'Swiper',
+    title:'面向对象思想',
     text:'轮播。',
-    router: 'http://www.swiper.com.cn/'
+    router: 'https://pan.baidu.com/s/1pLt2YpH'
   },
   {
-    title:'Swiper',
+    title:'框架',
     text:'轮播。',
-    router: 'http://www.swiper.com.cn/'
+    router: 'https://pan.baidu.com/s/1c12wHXm'
+  },
+  {
+    title:'主流框架',
+    text:'轮播。',
+    router: 'https://pan.baidu.com/s/1i4FdLo5'
+  },
+  {
+    title:'移动混合App',
+    text:'轮播。',
+    router: 'https://pan.baidu.com/s/1ccsCiE'
+  },
+  {
+    title:'Node.js',
+    text:'轮播。',
+    router: 'https://pan.baidu.com/s/1nuTiGIl'
   },
 
 

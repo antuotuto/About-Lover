@@ -62,7 +62,7 @@
       <love v-bind:an="news"></love>
     </div>
 
-    <h2>学习美站</h2>
+    <h2>王安安收集的最好的前端入门</h2>
     <div class="product-box">
       <loveThing v-bind:an="beautyLearns"></loveThing>
     </div>

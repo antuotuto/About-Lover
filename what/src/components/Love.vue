@@ -88,7 +88,7 @@ export default {
             height: 0;
             overflow: hidden;
             position: absolute;
-            top: 80px;
+            top: 120px;
             left: 0;
             background: #fff;
             z-index: 100;
