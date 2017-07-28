@@ -1,35 +1,77 @@
 <template>
-  <transition name="slide">
-    <div class="singer-detail"></div>
-    <!-- <music-list></music-list> -->
-  </transition>
+<transition name="slide">
+  <music-list :songs="songs" :bgImage="bgImage" :title="title"></music-list>
+</transition>
 </template>
 
 <script type="text/ecmascript-6">
-  // import MusicList from 'components/music-list/music-list'
-  // import {getSingerDetail} from 'api/singer'
-  // import {ERR_OK} from 'api/config'
-  // import {createSong} from 'common/js/song'
-  // import {mapGetters} from 'vuex'
+import MusicList from 'components/music-list/music-list'
+import {
+  getSingerDetail
+} from 'api/singer'
+import {
+  ERR_OK
+} from 'api/config'
+import {
+  createSong
+} from 'common/js/song'
+import {
+  mapGetters
+} from 'vuex'
 
-  export default {
-    // components: {
-    //   MusicList
-    // }
+export default {
+  computed: {
+    title() {
+      return this.singer.name
+      console.log(an);
+    },
+    bgImage() {
+      return this.singer.avatar
+    },
+    ...mapGetters([
+      'singer'
+    ])
+  },
+  data() {
+    return {
+      songs: []
+    }
+  },
+  created() {
+    this._getDetail()
+  },
+  methods: {
+    _getDetail() {
+      if (!this.singer.id) {
+        this.$router.push('/singer')
+        return
+      }
+      getSingerDetail(this.singer.id).then((res) => {
+        if (res.code === ERR_OK) {
+          this.songs = this._normalizeSongs(res.data.list)
+        }
+      })
+    },
+    _normalizeSongs(list) {
+      let ret = []
+      list.forEach((item) => {
+        let {
+          musicData
+        } = item
+        if (musicData.songid && musicData.albummid) {
+          ret.push(createSong(musicData))
+        }
+      })
+      return ret
+    }
+  },
+  components: {
+    MusicList
   }
+}
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-
-  .singer-detail
-    position: fixed
-    z-index: 100
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-    background:#000
-
   .slide-enter-active, .slide-leave-active
     transition: all 0.3s
 
