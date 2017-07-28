@@ -7,7 +7,7 @@
   <div class="bg-image" :style="bgStyle" ref="bgImage">
     <div class="filter"></div>
   </div>
-  <scroll :data="songs" class="list">
+  <scroll :data="songs" class="list" ref="list">
     <div class="song-list-wrapper">
       <song-list :songs="songs"></song-list>
     </div>
@@ -41,6 +41,7 @@ export default {
   },
   mounted() {
     this.imageHeight = this.$refs.bgImage.clientHeight
+      // this.minTransalteY = -this.imageHeight + RESERVED_HEIGHT
       this.$refs.list.$el.style.top = `${this.imageHeight}px`
   },
   components: {
