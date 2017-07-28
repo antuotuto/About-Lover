@@ -1,7 +1,8 @@
 <template>
-<div class="singer">
-  <list-view :data="singers" ref="list"></list-view>
-</div>
+  <div class="singer" ref="singer">
+      <list-view @select="selectSinger" :data="singers" ref="list"></list-view>
+      <router-view></router-view>
+    </div>
 </template>
 
 <script>
@@ -36,6 +37,12 @@ export default {
         }
       })
     },
+    selectSinger(singer) {
+        this.$router.push({
+          path: `/singer/${singer.id}`
+        })
+        // this.setSinger(singer)
+      },
     _normalizeSinger(list) {
       let map = {
         hot: {
