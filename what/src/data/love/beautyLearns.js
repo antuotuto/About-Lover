@@ -12,7 +12,7 @@ export const beautyLearns = [
   {
     title:'JavaScript',
     text:'React 起源于 Facebook 的内部项目，因为该公司对市场上所有 JavaScript MVC 框架，都不满意，就决定自己写一套。',
-    router: 'https://pan.baidu.com/s/1slO7gap'
+    router: 'https://pan.baidu.com/s/1kU4QPGr'
   },
   {
     title:'jQuery',
@@ -32,7 +32,7 @@ export const beautyLearns = [
   {
     title:'Ajax',
     text:'Element，一套为开发者、设计师和产品经理准备的基于 Vue 2.0 的组件库，提供了配套设计资源，帮助你的网站快速成型。',
-    router: 'https://pan.baidu.com/s/1c1602x6'
+    router: 'https://pan.baidu.com/s/1dEFSyIH'
   },
   {
     title:'移动Web开发',
@@ -67,7 +67,7 @@ export const beautyLearns = [
   {
     title:'Node.js',
     text:'轮播。',
-    router: 'https://pan.baidu.com/s/1nuTiGIl'
+    router: 'https://pan.baidu.com/s/1c1SfFaw'
   },
 
 
