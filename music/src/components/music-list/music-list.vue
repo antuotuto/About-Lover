@@ -7,7 +7,8 @@
   <div class="bg-image" :style="bgStyle" ref="bgImage">
     <div class="filter"></div>
   </div>
-  <scroll :data="songs" class="list" ref="list">
+  <div class="bg-layer" ref="layer"></div>
+  <scroll :data="songs" @scroll="scroll"  :listen-scroll="listenScroll" :probe-type="probeType" class="list" ref="list">
     <div class="song-list-wrapper">
       <song-list :songs="songs"></song-list>
     </div>
@@ -39,10 +40,14 @@ export default {
       return `background-image:url(${this.bgImage})`
     }
   },
+  created() {
+    this.probeType = 3
+    this.listenScroll = true
+  },
   mounted() {
     this.imageHeight = this.$refs.bgImage.clientHeight
-      // this.minTransalteY = -this.imageHeight + RESERVED_HEIGHT
-      this.$refs.list.$el.style.top = `${this.imageHeight}px`
+    // this.minTransalteY = -this.imageHeight + RESERVED_HEIGHT
+    this.$refs.list.$el.style.top = `${this.imageHeight}px`
   },
   components: {
     Scroll,

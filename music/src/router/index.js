@@ -1,12 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Hello from 'src/components/Hello'
-import Rank from 'src/components/rank/rank'
-import Recommend from 'src/components/recommend/recommend'
-import Singer from 'src/components/singer/singer'
-import Search from 'src/components/search/search'
-import SingerDetail from 'src/components/singer-detail/singer-detail'
+const Recommend = (resolve) => {
+  import ('components/recommend/recommend').then((module) => {
+    resolve(module)
+  })
+}
+
+const Singer = (resolve) => {
+  import ('components/singer/singer').then((module) => {
+    resolve(module)
+  })
+}
+
+const Rank = (resolve) => {
+  import ('components/rank/rank').then((module) => {
+    resolve(module)
+  })
+}
+
+const Search = (resolve) => {
+  import ('components/search/search').then((module) => {
+    resolve(module)
+  })
+}
+
+const SingerDetail = (resolve) => {
+  import ('components/singer-detail/singer-detail').then((module) => {
+    resolve(module)
+  })
+}
 
 Vue.use(Router)
 
