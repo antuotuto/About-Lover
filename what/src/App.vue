@@ -3,6 +3,7 @@
   <router-link to="/headerTop" class="downButton">
     <i class="icon iconfont icon-liebiao2"></i>
   </router-link>
+  <img src="./assets/WechatIMG4.jpeg" alt="">
   <router-view></router-view>
 </div>
 </template>
