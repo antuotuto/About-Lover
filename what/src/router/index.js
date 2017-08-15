@@ -1,14 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import Home from '@/components/Home'
 import NotFoundComponent from '@/pages/404'
-import Life from '@/components/Life'
-import HeaderTop from '@/components/HeaderTop'
 import NavHome from '@/components/NavHome'
-import Music from '@/pages/Music'
 import MusicPlay from '@/pages/MusicPlay'
 
+const Home = (resolve) => {
+  import ('@/components/Home').then((module) => {
+    resolve(module)
+  })
+}
+
+const Life = (resolve) => {
+  import ('@/components/Life').then((module) => {
+    resolve(module)
+  })
+}
+
+const HeaderTop = (resolve) => {
+  import ('@/components/HeaderTop').then((module) => {
+    resolve(module)
+  })
+}
+
+const Something = (resolve) => {
+  import ('@/components/something').then((module) => {
+    resolve(module)
+  })
+}
 
 Vue.use(Router)
 
@@ -16,9 +35,9 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/Home'
     },{
-      path: '/home',
+      path: '/Home',
       component: Home,
       children: [
         {
@@ -27,11 +46,7 @@ export default new Router({
         },
         {
             path: '1',
-            component: Hello
-        },
-        {
-            path: '2',
-            component: Hello
+            component: Something
         }
       ]
     },{
@@ -44,10 +59,6 @@ export default new Router({
         },
         {
             path: '1',
-            component: Life
-        },
-        {
-            path: '2',
             component: Life
         }
       ]
@@ -62,27 +73,8 @@ export default new Router({
         {
             path: '1',
             component: NavHome
-        },
-        {
-            path: '2',
-            component: NavHome
-        },
-        {
-            path: '3',
-            component: NavHome
-        },
-        {
-            path: '4',
-            component: Hello
-        },
-        {
-            path: '5',
-            component: NavHome
         }
       ]
-    },{
-      path: '/music',
-      component: Music,
     },{
         path: '*',
         component: NotFoundComponent
