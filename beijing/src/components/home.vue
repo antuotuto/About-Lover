@@ -1,34 +1,36 @@
 <template>
-<div class="something">
-  11
-
+<div class="home">
+  <something></something>
 </div>
 </template>
 
 <script>
+import something from '~/components/something.vue'
 export default {
-  name: 'something',
+  name: 'home',
   data() {
     return {
 
     }
   },
   components: {
-
+    something
   },
   methods: {
 
   },
   watch: {},
-  created() {},
+  created() {
+  },
 }
 </script>
 
 <style scoped lang="scss">
 @media screen and (max-width:900px) {
-    .something {
-        height: 100%;
+  .home{
+    height:100%;
+  }
     }
-}
-@media screen and (min-width:900px) {}
+@media screen and (min-width:900px) {
+    }
 </style>

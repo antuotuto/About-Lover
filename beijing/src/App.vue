@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <something></something>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import something from '~/components/something.vue'
 
 export default {
   data () {
@@ -16,9 +16,6 @@ export default {
   methods: {
 
   },
-  components:{
-    something
-  }
 }
 </script>
 
@@ -26,5 +23,6 @@ export default {
 #app {
   font-family: Helvetica, sans-serif;
   text-align: center;
+  height:100%;
 }
 </style>

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import App from '~/App.vue'
 import Something from '~/components/something.vue'
+import Home from '~/components/home.vue'
 import NotFoundComponent from '~/pages/404.vue'
 
 Vue.use(Router)
@@ -10,20 +11,20 @@ Vue.use(Router)
 const routes = [
   {
     path: '/',
-    redirect: '/something'
-  },,{
-    path: '/something',
-    component: Something,
-    children: [
-      {
-          path: '',
-          redirect: '1'
-      },
-      {
-          path: '1',
-          component: Something
-      }
-    ]
+    redirect: '/Home'
+  },{
+    path: '/Home',
+    component: Home,
+    // children: [
+    //   {
+    //       path: '',
+    //       redirect: '1'
+    //   },
+    //   {
+    //       path: '1',
+    //       component: Something
+    //   }
+    // ]
   },{
         path: '*',
         component: NotFoundComponent,
