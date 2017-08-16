@@ -59,16 +59,18 @@
   <transition name="mini">
     <div class="mini-player" v-show="!fullScreen" @click="open">
       <div class="icon">
-        <img width="40" height="40" :src="currentSong.image" :class="cdCls">
+        <img :class="cdCls" width="40" height="40" :src="currentSong.image">
       </div>
       <div class="text">
         <h2 class="name" v-html="currentSong.name"></h2>
         <p class="desc" v-html="currentSong.singer"></p>
       </div>
       <div class="control">
-        <i @click.stop="togglePlaying" class="icon-mini" :class="miniIcon"></i>
+        <progress-circle :radius="radius" :percent="percent">
+          <i @click.stop="togglePlaying" class="icon-mini" :class="miniIcon"></i>
+        </progress-circle>
       </div>
-      <div class="control">
+      <div class="control" @click.stop="showPlaylist">
         <i class="icon-playlist"></i>
       </div>
     </div>
@@ -80,6 +82,8 @@
 <script type="text/ecmascript-6">
 import animations from 'create-keyframe-animation'
 import ProgressBar from 'base/progress-bar/progress-bar'
+import ProgressCircle from 'base/progress-circle/progress-circle'
+
 import {
   prefixStyle
 } from 'common/js/dom'
@@ -200,6 +204,9 @@ export default {
         this.currentLyric.seek(currentTime * 1000)
       }
     },
+    showPlaylist() {
+      this.$refs.playlist.show()
+    },
     enter(el, done) {
       const {
         x,
@@ -286,7 +293,8 @@ export default {
     },
   },
   components: {
-    ProgressBar
+    ProgressBar,
+    ProgressCircle
   }
 }
 </script>
