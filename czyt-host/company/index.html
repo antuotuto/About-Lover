@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>财资易通</title>
+  <link rel="" href="./src/assets/iconfont/iconfont.css">
+  <style>
+    * {
+      -webkit-tap-highlight-color: transparent;
+      outline: 0;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    blockquote,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    pre,
+    form,
+    fieldset,
+    legend,
+    button,
+    input,
+    textarea,
+    th,
+    td {
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+    }
+
+    img {
+      border: 0 none;
+      vertical-align: top;
+    }
+
+    i,
+    em {
+      font-style: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    input,
+    select,
+    button,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 100%;
+      font-family: inherit;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #666;
+    }
+
+    body {
+      margin: 0 auto;
+      min-width: 320px;
+      max-width: 640px;
+      height: 100%;
+      font-size: 14px;
+      fon-family: -apple-system, Helvetica, sans-serif;
+      line-height: 1.5;
+      color: #666;
+      -webkit-text-size-adjust: 100% !important;
+      text-size-adjust: 100% !important;
+    }
+
+    input[type="text"],
+    textarea {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width:100%;
+    }
+
+    .loading {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 100000;
+      background: #eee;
+      text-align: center;
+      line-height: 200px;
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dont-wor p {
+      font-size: 15px;
+      height: 65px;
+      line-height: 65px;
+      width: 200px;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(27, 55, 75, 0.08);
+      text-align: center;
+      font-weight: bold;
+      color: #777;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=loading id=loading>
+    <div class=dont-wor>
+      <p>财资易通正在加载 <i class=el-icon-loading></i></p>
+    </div>
+  </div>
+  <div id=app></div>
+  <script type=text/javascript>
+    window.onload = function() {
+      console.log('财资易通');
+      var loading = document.getElementById('loading')
+      loading.classList.add('hidden')
+    }
+  </script>
+</body>
+
+</html>

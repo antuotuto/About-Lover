@@ -4,7 +4,6 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    port:9000,
     index: path.resolve(__dirname, '../dist/index.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
@@ -26,7 +25,7 @@ module.exports = {
     env: require('./dev.env'),
     port: 3000,
     autoOpenBrowser: true,
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: './static',
     assetsPublicPath: '/',
     proxyTable: {},
     // CSS Sourcemaps off by default because relative paths are "buggy"
