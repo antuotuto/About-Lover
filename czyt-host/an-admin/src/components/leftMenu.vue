@@ -7,17 +7,17 @@
       <el-row :gutter="20" class="seach">
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <el-input placeholder="请选择日期" icon="search" v-model="input2" :on-icon-click="handleIconClick"></el-input>
+            <el-input placeholder="请输入身份证" icon="search" v-model="input2" :on-icon-click="handleIconClick"></el-input>
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <el-input placeholder="请选择日期" icon="search" v-model="input2" :on-icon-click="handleIconClick"></el-input>
+            <el-input placeholder="请输入年龄" icon="search" v-model="input2" :on-icon-click="handleIconClick"></el-input>
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <el-input placeholder="请选择日期" icon="search" v-model="input2" :on-icon-click="handleIconClick"></el-input>
+            <el-input placeholder="请输入姓名" icon="search" v-model="input2" :on-icon-click="handleIconClick"></el-input>
           </div>
         </el-col>
         <el-col :span="6">
@@ -29,7 +29,9 @@
 
       <el-tab-pane>
         <span slot="label"><i class="el-icon-plus"></i> 添加数据</span>
-        <excl></excl>
+        <!-- <excl ></excl> -->
+        <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="currentPage4" :page-size="20" layout="total, sizes, prev, pager, next, jumper" :total="400">
+        </el-pagination>
       </el-tab-pane>
       <el-tab-pane>
         <span slot="label"><i class="el-icon-minus"></i> 修改数据</span> 1
@@ -45,7 +47,15 @@
   </div>
 
   <div class="excl-explain">
-    <el-tree :data="data3" show-checkbox node-key="id" :default-expanded-keys="[2, 3]" :default-checked-keys="[5]">
+    <!-- <el-tree :data="data3" show-checkbox node-key="id" :default-expanded-keys="[2, 3]" :default-checked-keys="[5]"> -->
+
+    <el-button type="text" @click="dialogTableVisible = true">打开嵌套表格的 Dialog</el-button>
+
+    <el-dialog title="收货地址" :visible.sync="dialogTableVisible">
+      <el-tree :data="data2" show-checkbox node-key="id" :default-expanded-keys="[2, 3]" :default-checked-keys="[5]" :props="defaultProps">
+      </el-tree>
+    </el-dialog>
+
     </el-tree>
   </div>
 </div>
@@ -115,7 +125,7 @@ export default {
             label: '三级 3-2-2',
             disabled: true
           }]
-        },{
+        }, {
           id: 3,
           label: '二级 2-2',
           disabled: true,
@@ -129,14 +139,132 @@ export default {
           }]
         }]
       }],
+      data2: [{
+        id: 1,
+        label: '一级 1',
+        children: [{
+          id: 4,
+          label: '二级 1-1',
+          children: [{
+            id: 9,
+            label: '三级 1-1-1'
+          }, {
+            id: 10,
+            label: '三级 1-1-2'
+          }]
+        }]
+      }, {
+        id: 2,
+        label: '一级 2',
+        children: [{
+          id: 5,
+          label: '二级 2-1'
+        }, {
+          id: 6,
+          label: '二级 2-2'
+        }]
+      }, {
+        id: 3,
+        label: '一级 3',
+        children: [{
+          id: 7,
+          label: '二级 3-1'
+        }, {
+          id: 8,
+          label: '二级 3-2'
+        }]
+      },{
+        id: 4,
+        label: '一级 3',
+        children: [{
+          id: 7,
+          label: '二级 3-1'
+        }, {
+          id: 8,
+          label: '二级 3-2'
+        }]
+      },{
+        id: 5,
+        label: '一级 3',
+        children: [{
+          id: 7,
+          label: '二级 3-1'
+        }, {
+          id: 8,
+          label: '二级 3-2'
+        }]
+      },{
+        id: 6,
+        label: '一级 3',
+        children: [{
+          id: 7,
+          label: '二级 3-1'
+        }, {
+          id: 8,
+          label: '二级 3-2'
+        }]
+      },{
+        id: 7,
+        label: '一级 3',
+        children: [{
+          id: 7,
+          label: '二级 3-1'
+        }, {
+          id: 8,
+          label: '二级 3-2'
+        }]
+      },{
+        id: 8,
+        label: '一级 3',
+        children: [{
+          id: 7,
+          label: '二级 3-1'
+        }, {
+          id: 8,
+          label: '二级 3-2'
+        }]
+      }],
       defaultProps: {
         children: 'children',
         label: 'label'
-      }
-  }
-},
-watch: {},
+      },
+      defaultProps: {
+        children: 'children',
+        label: 'label'
+      },
+      currentPage1: 5,
+      currentPage2: 5,
+      currentPage3: 5,
+      currentPage4: 4,
+      gridData: [{
+        date: '2016-05-02',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-04',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-01',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }, {
+        date: '2016-05-03',
+        name: '王小虎',
+        address: '上海市普陀区金沙江路 1518 弄'
+      }],
+      dialogTableVisible: false,
+      dialogFormVisible: false,
+    }
+  },
+  watch: {},
   methods: {
+    handleSizeChange(val) {
+      console.log(`每页 ${val} 条`);
+    },
+    handleCurrentChange(val) {
+      console.log(`当前页: ${val}`);
+    },
     handleIconClick(ev) {
       console.log(ev);
     },
@@ -368,7 +496,7 @@ watch: {},
   padding: 15px;
   overflow-y: scroll;
   box-sizing: border-box;
-  height:100%;
+  height: 100%;
 }
 
 .excl-box {
@@ -376,6 +504,11 @@ watch: {},
 }
 
 .excl-explain {
+  margin-top: 15px;
+}
+
+.el-pagination {
+  text-align: center;
   margin-top: 15px;
 }
 
