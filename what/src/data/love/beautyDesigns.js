@@ -1,10 +1,5 @@
 export const beautyDesigns = [
   {
-    title:'极客学院',
-    text:'Vue.js是一个构建数据驱动的 web 界面的渐进式框架, API 实现响应的数据绑定和组合的视图组件。',
-    router: 'http://www.jikexueyuan.com/'
-  },
-  {
     title:'慕课网',
     text:'AngularJS诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。',
     router: 'http://www.imooc.com/'
